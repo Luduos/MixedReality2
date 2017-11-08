@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/OpenStreetMapTest/main.unity
+- path: Assets/__Scenes/MapTest.unity
   isLoaded: 1
   isActive: 1
