@@ -8,13 +8,12 @@ public class OSMapReader : MonoBehaviour {
     private TextAsset MapFile;
 
     [SerializeField]
+    private OSMapDebugDisplay MapDebugDisplay;
+
+    [SerializeField]
     private GameObject GroundPlane;
 
-    public OSMBounds Bounds { get; private set; }
-
-    public Dictionary<ulong, OSMNode> Nodes { get; private set; }
-
-    public List<OSMWay> Ways { get; private set; }
+    public OSMapInfo MapInfo;
 
     public bool IsReady { get; private set; }
 
@@ -23,8 +22,8 @@ public class OSMapReader : MonoBehaviour {
         //TextAsset mapFileAsset = Resources.Load<TextAsset>(mapFile.name);
 
         // init data structures
-        Nodes = new Dictionary<ulong, OSMNode>();
-        Ways = new List<OSMWay>();
+        MapInfo.Nodes = new Dictionary<ulong, OSMNode>();
+        MapInfo.Ways = new List<OSMWay>();
 
         // load xml map file
         XmlDocument xmlMap = new XmlDocument();
@@ -34,20 +33,19 @@ public class OSMapReader : MonoBehaviour {
         GetNodes(xmlMap.SelectNodes("/osm/node"));
         GetWays(xmlMap.SelectNodes("/osm/way"));
 
-        float minx = (float)MercatorProjection.lonToX(Bounds.MinLongitude);
-        float maxx = (float)MercatorProjection.lonToX(Bounds.MaxLongitude);
-        float miny = (float)MercatorProjection.latToY(Bounds.MinLatitude);
-        float maxy = (float)MercatorProjection.latToY(Bounds.MaxLatitude);
+        float minx = (float)MercatorProjection.lonToX(MapInfo.Bounds.MinLongitude);
+        float maxx = (float)MercatorProjection.lonToX(MapInfo.Bounds.MaxLongitude);
+        float miny = (float)MercatorProjection.latToY(MapInfo.Bounds.MinLatitude);
+        float maxy = (float)MercatorProjection.latToY(MapInfo.Bounds.MaxLatitude);
 
         GroundPlane.transform.localScale = new Vector3((maxx - minx) / 2, 1, (maxy - miny) / 2);
-
 
         IsReady = true;
     }
 
     private void SetBounds(XmlNode xmlNode)
     {
-        Bounds = new OSMBounds(xmlNode);
+        MapInfo.Bounds = new OSMBounds(xmlNode);
     }
 
     private void GetNodes(XmlNodeList xmlNodeList)
@@ -55,7 +53,7 @@ public class OSMapReader : MonoBehaviour {
         foreach(XmlNode xmlNode in xmlNodeList)
         {
             OSMNode osmNode = new OSMNode(xmlNode);
-            Nodes[osmNode.ID] = osmNode;
+            MapInfo.Nodes[osmNode.ID] = osmNode;
         }
     }
 
@@ -64,35 +62,15 @@ public class OSMapReader : MonoBehaviour {
         foreach(XmlNode xmlNode in xmlNodeList)
         {
             OSMWay osmWay = new OSMWay(xmlNode);
-            Ways.Add(osmWay);
+            MapInfo.Ways.Add(osmWay);
         }
     }
 	
 	// Update is called once per frame
 	void Update () {
-        foreach (OSMWay currentWay in Ways)
+        if(null != MapDebugDisplay)
         {
-            if (currentWay.Visible)
-            {
-                Color color = Color.green;
-                if (OSMWayType.Highway == currentWay.WayType)
-                {
-                    color = Color.red;
-                }else if(OSMWayType.Building == currentWay.WayType)
-                {
-                    color = Color.blue;
-                }
-                for (int i = 1; i < currentWay.NodeIDs.Count; i++)
-                {
-                    OSMNode p1 = Nodes[currentWay.NodeIDs[i - 1]];
-                    OSMNode p2 = Nodes[currentWay.NodeIDs[i]];
-
-                    Vector3 v1 = p1 - Bounds.Center;
-                    Vector3 v2 = p2 - Bounds.Center;
-
-                    Debug.DrawLine(v1, v2, color);
-                }
-            }
+            MapDebugDisplay.DisplayWays(MapInfo);
         }
     }
 }

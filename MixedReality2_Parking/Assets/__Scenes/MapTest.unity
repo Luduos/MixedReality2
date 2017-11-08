@@ -121,6 +121,7 @@ GameObject:
   m_Component:
   - component: {fileID: 137424307}
   - component: {fileID: 137424306}
+  - component: {fileID: 137424308}
   m_Layer: 0
   m_Name: MapReader
   m_TagString: Untagged
@@ -140,6 +141,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MapFile: {fileID: 4900000, guid: 989c786a1638b1a4e9acb5de0e6e7762, type: 3}
+  MapDebugDisplay: {fileID: 137424308}
   GroundPlane: {fileID: 866664368}
 --- !u!4 &137424307
 Transform:
@@ -155,6 +157,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &137424308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 137424305}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 873ee849f42aa5c429c4afec956e2b80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HighwayColor: {r: 1, g: 0, b: 0, a: 1}
+  BuildingColor: {r: 0, g: 0, b: 1, a: 1}
+  UnknownColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!1 &866664368
 GameObject:
   m_ObjectHideFlags: 0
@@ -252,6 +268,7 @@ GameObject:
   - component: {fileID: 1989921273}
   - component: {fileID: 1989921272}
   - component: {fileID: 1989921271}
+  - component: {fileID: 1989921275}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -292,7 +309,7 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
-  orthographic: 1
+  orthographic: 0
   orthographic size: 5
   m_Depth: -1
   m_CullingMask:
@@ -321,3 +338,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1989921275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1989921270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f696235389780774caa4bce7e88e14b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainSpeed: 100
+  shiftAdd: 250
+  maxShift: 1000
+  camSens: 0.25
+  rotateOnlyIfMousedown: 1
+  movementStaysFlat: 1
