@@ -80,7 +80,15 @@ public class OSMWay : OSMDataElement
                     break;
                 case "building":
                     {
-                        WayType = OSMWayType.Building;
+                        string value = GetAttribute<string>("v", tag.Attributes);
+                        if (value.Equals("parking"))
+                        {
+                            WayType = OSMWayType.Parking;
+                        }
+                        else
+                        {
+                            WayType = OSMWayType.Building;
+                        }
                     }
                     break;
                 case "highway":
@@ -88,6 +96,15 @@ public class OSMWay : OSMDataElement
                         WayType = OSMWayType.Highway;
                     }
                     break;
+                case "amenity":
+                    {
+                        string value = GetAttribute<string>("v", tag.Attributes);
+                        if (value.Equals("parking"))
+                        {
+                            WayType = OSMWayType.Parking;
+                        }
+                        break;
+                    }
                 case "name":
                     {
                         Name = GetAttribute<string>("v", tag.Attributes);
@@ -107,5 +124,6 @@ public enum OSMWayType
 {
     Unknown,
     Highway,
+    Parking,
     Building
 }

@@ -23,7 +23,10 @@ public class OSMapReader : MonoBehaviour {
 
         // init data structures
         MapInfo.Nodes = new Dictionary<ulong, OSMNode>();
-        MapInfo.Ways = new List<OSMWay>();
+        MapInfo.Unknown = new List<OSMWay>();
+        MapInfo.Roads = new List<OSMWay>();
+        MapInfo.Buildings = new List<OSMWay>();
+        MapInfo.ParkSpaces = new List<OSMWay>();
 
         // load xml map file
         XmlDocument xmlMap = new XmlDocument();
@@ -62,7 +65,22 @@ public class OSMapReader : MonoBehaviour {
         foreach(XmlNode xmlNode in xmlNodeList)
         {
             OSMWay osmWay = new OSMWay(xmlNode);
-            MapInfo.Ways.Add(osmWay);
+            if (OSMWayType.Highway == osmWay.WayType)
+            {
+                MapInfo.Roads.Add(osmWay);
+            }
+            else if (OSMWayType.Parking == osmWay.WayType)
+            {
+                MapInfo.ParkSpaces.Add(osmWay);
+            }
+            else if (OSMWayType.Building == osmWay.WayType)
+            {
+                MapInfo.Buildings.Add(osmWay);
+            }
+            else
+            {
+                MapInfo.Unknown.Add(osmWay);
+            }
         }
     }
 	
