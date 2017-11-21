@@ -46,7 +46,7 @@ public class OSMapDebugDisplay : MonoBehaviour{
             Vector3 v1 = p1 - mapInfo.Bounds.Center;
             Vector3 v2 = p2 - mapInfo.Bounds.Center;
 
-            Debug.DrawLine(v1, v2, color);
+            Debug.DrawLine(v1, v2, color);            
         }
     }
 }

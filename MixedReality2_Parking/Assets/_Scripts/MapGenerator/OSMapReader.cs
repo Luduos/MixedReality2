@@ -11,9 +11,14 @@ public class OSMapReader : MonoBehaviour {
     private OSMapDebugDisplay MapDebugDisplay;
 
     [SerializeField]
+    private NavigationDebugDisplay NavDebugDisplay;
+
+    [SerializeField]
     private GameObject GroundPlane;
 
     public OSMapInfo MapInfo;
+
+    public NavigationInfo NavInfo;
 
     public bool IsReady { get; private set; }
 
@@ -28,21 +33,31 @@ public class OSMapReader : MonoBehaviour {
         MapInfo.Buildings = new List<OSMWay>();
         MapInfo.ParkSpaces = new List<OSMWay>();
 
+        NavInfo.Nodes = new Dictionary<ulong, HighwayNode>();
+
         // load xml map file
         XmlDocument xmlMap = new XmlDocument();
         xmlMap.LoadXml(MapFile.text);
 
+        // load different xmlNode types
         SetBounds(xmlMap.SelectSingleNode("/osm/bounds"));
         GetNodes(xmlMap.SelectNodes("/osm/node"));
         GetWays(xmlMap.SelectNodes("/osm/way"));
 
+        // Connect and spawn test nodes
+        ConnectHighwayNodes();
+        NavDebugDisplay.SpawnNavigationNodes(NavInfo);
+
+        // read and convert map boundaries
         float minx = (float)MercatorProjection.lonToX(MapInfo.Bounds.MinLongitude);
         float maxx = (float)MercatorProjection.lonToX(MapInfo.Bounds.MaxLongitude);
         float miny = (float)MercatorProjection.latToY(MapInfo.Bounds.MinLatitude);
         float maxy = (float)MercatorProjection.latToY(MapInfo.Bounds.MaxLatitude);
 
+        // scale the groundplane to cover the whole map area
         GroundPlane.transform.localScale = new Vector3((maxx - minx) / 2, 1, (maxy - miny) / 2);
 
+        // signalize that the reading of the map file is done
         IsReady = true;
     }
 
@@ -55,9 +70,14 @@ public class OSMapReader : MonoBehaviour {
     {
         foreach(XmlNode xmlNode in xmlNodeList)
         {
-            OSMNode osmNode = new OSMNode(xmlNode);
-            MapInfo.Nodes[osmNode.ID] = osmNode;
+            CreateOSMNode(xmlNode);
         }
+    }
+
+    private void CreateOSMNode(XmlNode xmlNode)
+    {
+        OSMNode osmNode = new OSMNode(xmlNode);
+        MapInfo.Nodes[osmNode.ID] = osmNode;
     }
 
     private void GetWays(XmlNodeList xmlNodeList)
@@ -68,6 +88,7 @@ public class OSMapReader : MonoBehaviour {
             if (OSMWayType.Highway == osmWay.WayType)
             {
                 MapInfo.Roads.Add(osmWay);
+                CreateHighwayNodesFromWay(osmWay);
             }
             else if (OSMWayType.Parking == osmWay.WayType)
             {
@@ -80,6 +101,39 @@ public class OSMapReader : MonoBehaviour {
             else
             {
                 MapInfo.Unknown.Add(osmWay);
+            }
+        }
+    }
+
+    private void CreateHighwayNodesFromWay(OSMWay osmWay)
+    {
+        foreach(ulong nodeID in osmWay.NodeIDs)
+        {
+            OSMNode osmNode = MapInfo.Nodes[nodeID];
+            HighwayNode highwayNode = new HighwayNode(osmNode, MapInfo.Bounds.Center);
+            NavInfo.Nodes[highwayNode.ID] = highwayNode;
+        }
+    }
+
+    private void ConnectHighwayNodes()
+    {
+        foreach(OSMWay osmWay in MapInfo.Roads)
+        {
+            ConnectHighwayNodesFromWay(osmWay);
+        }
+    }
+
+    private void ConnectHighwayNodesFromWay(OSMWay osmWay)
+    {
+        if (osmWay.Visible && osmWay.NodeIDs.Count > 0)
+        {
+            HighwayNode currentNode = NavInfo.Nodes[osmWay.NodeIDs[0]];
+            for (int i = 1; i < osmWay.NodeIDs.Count; ++i)
+            {
+                HighwayNode nextNode = NavInfo.Nodes[osmWay.NodeIDs[i]];
+                currentNode.Neighbours.Add(nextNode);
+                nextNode.Neighbours.Add(currentNode);
+                currentNode = nextNode;
             }
         }
     }

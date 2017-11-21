@@ -1,6 +1,7 @@
 ﻿using System.Xml;
 using System.Collections.Generic;
 
+
 /// <summary>
 /// OSM data object, which describes a collection of OSMNodes describing a shape or a road
 /// </summary>
