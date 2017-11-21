@@ -46,7 +46,9 @@ public class OSMapReader : MonoBehaviour {
 
         // Connect and spawn test nodes
         ConnectHighwayNodes();
+        MarkParkingEntries();
         NavDebugDisplay.SpawnNavigationNodes(NavInfo);
+        NavDebugDisplay.SpawnParkingLotMarkers(MapInfo);
 
         // read and convert map boundaries
         float minx = (float)MercatorProjection.lonToX(MapInfo.Bounds.MinLongitude);
@@ -112,6 +114,20 @@ public class OSMapReader : MonoBehaviour {
             OSMNode osmNode = MapInfo.Nodes[nodeID];
             HighwayNode highwayNode = new HighwayNode(osmNode, MapInfo.Bounds.Center);
             NavInfo.Nodes[highwayNode.ID] = highwayNode;
+        }
+    }
+
+    private void MarkParkingEntries()
+    {
+        foreach(OSMWay parkingWay in MapInfo.ParkSpaces)
+        {
+            foreach(ulong parkingNodeID in parkingWay.NodeIDs)
+            {
+                HighwayNode possibleHighwayParkingNode;
+                bool foundNode = NavInfo.Nodes.TryGetValue(parkingNodeID, out possibleHighwayParkingNode);
+                if (foundNode)
+                    possibleHighwayParkingNode.IsParkingLotEntry = true;
+            }
         }
     }
 

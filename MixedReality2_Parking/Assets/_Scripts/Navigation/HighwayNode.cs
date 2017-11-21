@@ -20,6 +20,8 @@ public class HighwayNode {
     /// </summary>
     public List<HighwayNode> Neighbours { get; set; }
 
+    public bool IsParkingLotEntry { get; set; }
+
     public HighwayNode(XmlNode xmlNode, Vector3 MapCenter)
     {
         // OSM attributes
@@ -32,7 +34,7 @@ public class HighwayNode {
         float YCoord = (float)MercatorProjection.latToY(Latitude);
 
         Position = new Vector3(XCoord, 0.0f, YCoord) - MapCenter;
-
+        IsParkingLotEntry = false;
         Neighbours = new List<HighwayNode>();
     }
 
