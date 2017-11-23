@@ -30,7 +30,7 @@ public class PlayerController : MonoBehaviour {
 
     private bool IsTraveling = false;
     private bool IsRotating = false;
-    private static readonly float EPSILON = 0.01f;
+    private static readonly float EPSILON = 0.1f;
 
     /// <summary>
     /// Node the player is currently located at or traveling from
@@ -116,7 +116,7 @@ public class PlayerController : MonoBehaviour {
         // while we are not aligned with the target
         // Rotate around the vector that's pointing up / down, depending on whether we have to rotate left or right
         Quaternion targetRotation = Quaternion.LookRotation(vecToNextNode, new Vector3(0.0f, 1.0f, 0.0f));
-        while (dotForwardToTravelDir <1.0f)
+        while (dotForwardToTravelDir < 0.99f)
         {
             // linear interpolation to the next node position, depending on delta time and rotation speed
             rotationTransform.rotation = Quaternion.Lerp(rotationTransform.rotation, targetRotation, Time.deltaTime * RotationSpeed);
@@ -162,42 +162,7 @@ public class PlayerController : MonoBehaviour {
         }
     }
 
-    public void Continue()
-    {
-        if (CurrentNode == NextNode)
-        {
-            Display.OnNoNextTargetSelected();
-        }
-        else
-        {
-            Debug.Log("Starting Travel");
-            StartCoroutine(TravelToNextCrossRoads());
-        }
-    }
-
-    public void TurnLeft()
-    {
-        FindNewNextNodeHorizontal(PlayerCarMesh.transform.right);
-        StartCoroutine(TurnToNextNode());
-    }
-
-    public void TurnRight()
-    {
-        FindNewNextNodeHorizontal(-PlayerCarMesh.transform.right);
-        StartCoroutine(TurnToNextNode());
-    }
-
-    public void TurnForward()
-    {
-        FindNewNextNodeVertical(PlayerCarMesh.transform.forward);
-        StartCoroutine(TurnToNextNode());
-    }
-
-    public void TurnBackward()
-    {
-        FindNewNextNodeVertical(-PlayerCarMesh.transform.forward);
-        StartCoroutine(TurnToNextNode());
-    }
+    
 
     // left / right
     // For left and right finding we are searching for the lowest dot product on the left / right axis
@@ -246,5 +211,80 @@ public class PlayerController : MonoBehaviour {
             }
         }
         NextNode = nearestNeighbour;
+    }
+
+
+
+    /*******************     interface functions for speech input        ******************************/
+
+    public void SearchParkingLots()
+    {
+
+    }
+
+    public void Select(int parkingSpaceNumber)
+    {
+        //TODO
+    }
+
+    public void Continue()
+    {
+        if (CurrentNode == NextNode)
+        {
+            Display.OnNoNextTargetSelected();
+        }
+        else
+        {
+            Debug.Log("Starting Travel");
+            StartCoroutine(TravelToNextCrossRoads());
+        }
+    }
+
+    public void TurnLeft()
+    {
+        FindNewNextNodeHorizontal(PlayerCarMesh.transform.right);
+        StartCoroutine(TurnToNextNode());
+    }
+
+    public void GoLeft()
+    {
+        TurnLeft();
+        Continue();
+    }
+
+    public void TurnRight()
+    {
+        FindNewNextNodeHorizontal(-PlayerCarMesh.transform.right);
+        StartCoroutine(TurnToNextNode());
+    }
+
+    public void GoRight()
+    {
+        TurnRight();
+        Continue();
+    }
+
+    public void TurnForward()
+    {
+        FindNewNextNodeVertical(PlayerCarMesh.transform.forward);
+        StartCoroutine(TurnToNextNode());
+    }
+
+    public void GoForward()
+    {
+        TurnForward();
+        Continue();
+    }
+
+    public void TurnBackward()
+    {
+        FindNewNextNodeVertical(-PlayerCarMesh.transform.forward);
+        StartCoroutine(TurnToNextNode());
+    }
+
+    public void GoBackward()
+    {
+        TurnBackward();
+        Continue();
     }
 }
