@@ -47,7 +47,7 @@ public class OSMWay : OSMDataElement
     public OSMWay(XmlNode xmlNode)
     {
         NodeIDs = new List<ulong>();
-        Height = 3.0f;
+        Height = 10.0f;
         Lanes = 1;
         Name = "";
 
@@ -71,7 +71,7 @@ public class OSMWay : OSMDataElement
             {
                 case "building:levels":
                     {
-                        Height = 3.0f * GetAttribute<float>("v", tag.Attributes);
+                        Height = 10.0f * GetAttribute<float>("v", tag.Attributes);
                     }
                     break;
                 case "height":

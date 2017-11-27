@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
+// https://bitbucket.org/sloankelly/youtube-source-repository/src/02676ed7f8dc8b2ae124bc922a94062d28de3aaa/unity/Real%20World%20Map%20Data/Assets/Scripts/BuildingMaker.cs?at=master&fileviewer=file-view-default
 public class BuildingBuilder {
 
     public static void CreateBuilding(OSMWay way, OSMapInfo mapInfo, Material material)

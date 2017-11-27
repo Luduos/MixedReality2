@@ -64,8 +64,38 @@ public class PlayerController : MonoBehaviour {
         // choose random next node
         int neighbourCount = CurrentNode.Neighbours.Count;
         NextNode = CurrentNode.Neighbours[Random.Range(0, neighbourCount)];
+        TurnForward();
 
         this.transform.position = CurrentNode.Position + PlayerOffset;
+    }
+
+    private void Update()
+    {
+        selectedParkingSpace.Distance = (this.transform.position - selectedParkingSpace.WayCenter).magnitude;
+        Display.UpdateCurrentTargetDisplay(selectedParkingSpace);
+        Display.UpdateCurrentLocationDisplay(CurrentNode.Name);
+        if (IsTraveling)
+            return;
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Continue();
+        }
+        if (Input.GetKeyDown(KeyCode.UpArrow))
+        {
+            TurnForward();
+        }
+        if (Input.GetKeyDown(KeyCode.DownArrow))
+        {
+            TurnBackward();
+        }
+        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        {
+            TurnLeft();
+        }
+        if (Input.GetKeyDown(KeyCode.RightArrow))
+        {
+            TurnRight();
+        }
     }
 
     /// <summary>
@@ -135,31 +165,7 @@ public class PlayerController : MonoBehaviour {
         yield return null;
     }
 
-    private void Update()
-    {
-        if (IsTraveling)
-            return;
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            Continue();
-        }
-        if (Input.GetKeyDown(KeyCode.UpArrow))
-        {
-            TurnForward();
-        }
-        if (Input.GetKeyDown(KeyCode.DownArrow))
-        {
-            TurnBackward();
-        }
-        if (Input.GetKeyDown(KeyCode.LeftArrow))
-        {
-            TurnLeft();
-        }
-        if (Input.GetKeyDown(KeyCode.RightArrow))
-        {
-            TurnRight();
-        }
-    }
+    
 
     // left / right
     // For left and right finding we are searching for the lowest dot product on the left / right axis
@@ -229,7 +235,7 @@ public class PlayerController : MonoBehaviour {
         {
             if(selectedNumber <= Display.GetValidParkingSpaceOptionCount() && selectedNumber <= sortedParkingSpaces.Count)
             {
-                selectedParkingSpace = sortedParkingSpaces[selectedNumber];
+                selectedParkingSpace = sortedParkingSpaces[selectedNumber - 1];
                 Display.ShowCompassTo(selectedParkingSpace.WayCenter);
                 Display.HideSelectableParkingSpaces();
             }

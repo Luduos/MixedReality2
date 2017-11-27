@@ -44,11 +44,13 @@ public class OSMapReader : MonoBehaviour {
         GetNodes(xmlMap.SelectNodes("/osm/node"));
         GetWays(xmlMap.SelectNodes("/osm/way"));
 
-        // Connect and spawn test nodes
+        // Connect and spawn Debug Displays
         ConnectHighwayNodes();
         MarkParkingEntries();
         NavDebugDisplay.SpawnNavigationNodes(NavInfo);
         NavDebugDisplay.SpawnParkingLotMarkers(MapInfo);
+        NavDebugDisplay.SpawnRoads(MapInfo);
+        NavDebugDisplay.SpawnBuildings(MapInfo);
 
         // read and convert map boundaries
         float minx = (float)MercatorProjection.lonToX(MapInfo.Bounds.MinLongitude);
@@ -111,9 +113,22 @@ public class OSMapReader : MonoBehaviour {
     {
         foreach(ulong nodeID in osmWay.NodeIDs)
         {
-            OSMNode osmNode = MapInfo.Nodes[nodeID];
-            HighwayNode highwayNode = new HighwayNode(osmNode, MapInfo.Bounds.Center);
-            NavInfo.Nodes[highwayNode.ID] = highwayNode;
+            HighwayNode highwayNode;
+            NavInfo.Nodes.TryGetValue(nodeID, out highwayNode);
+            if(null == highwayNode)
+            {
+                OSMNode osmNode = MapInfo.Nodes[nodeID];
+                highwayNode = new HighwayNode(osmNode, MapInfo.Bounds.Center, osmWay.Name);
+                NavInfo.Nodes[highwayNode.ID] = highwayNode;
+            }
+            else
+            {
+                if (highwayNode.Name.Equals("") && !osmWay.Name.Equals(""))
+                {
+                    highwayNode.Name = osmWay.Name;
+                    NavInfo.Nodes[highwayNode.ID] = highwayNode;
+                }
+            } 
         }
     }
 
@@ -153,7 +168,7 @@ public class OSMapReader : MonoBehaviour {
             }
         }
     }
-	
+	/*
 	// Update is called once per frame
 	void Update () {
         if(null != MapDebugDisplay)
@@ -161,4 +176,5 @@ public class OSMapReader : MonoBehaviour {
             MapDebugDisplay.DisplayWays(MapInfo);
         }
     }
+    */
 }

@@ -22,6 +22,8 @@ public class HighwayNode {
 
     public bool IsParkingLotEntry { get; set; }
 
+    public string Name { get; set; }
+
     public HighwayNode(XmlNode xmlNode, Vector3 MapCenter)
     {
         // OSM attributes
@@ -38,7 +40,7 @@ public class HighwayNode {
         Neighbours = new List<HighwayNode>();
     }
 
-    public HighwayNode(OSMNode osmNode, Vector3 MapCenter)
+    public HighwayNode(OSMNode osmNode, Vector3 MapCenter, string Name)
     {
         ID = osmNode.ID;
 
@@ -47,6 +49,7 @@ public class HighwayNode {
 
         Position = new Vector3(XCoord, 0.0f, YCoord) - MapCenter;
         Neighbours = new List<HighwayNode>();
+        this.Name = Name;
     }
 
 }

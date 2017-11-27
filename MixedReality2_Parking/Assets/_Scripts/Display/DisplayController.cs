@@ -10,19 +10,59 @@ public class DisplayController : MonoBehaviour {
     private Text NotificationDisplay;
 
     [SerializeField]
+    private Text CurrentTargetDisplay;
+
+    [SerializeField]
+    private Text CurrentLocationDisplay;
+
+    [SerializeField]
     private float DisplayTime = 3.0f;
 
     [SerializeField]
     private Text[] ParkingSpaceDisplays;
 
+    private void Start()
+    {
+        CurrentTargetDisplay.enabled = false;
+    }
+
     public void ShowCompassTo(Vector3 target)
     {
+        CurrentTargetDisplay.enabled = true;
         Compass.Target = target;
         Compass.EnableCompassPointer(true);
     }
 
+    public void UpdateCurrentTargetDisplay(OSMWayFindingInfo target)
+    {
+        CurrentTargetDisplay.text = "Target: " + WayFindingInfoToString(target);
+    }
+
+    public void UpdateCurrentLocationDisplay(string LocationName)
+    {
+        if (LocationName.Equals(""))
+            LocationName = "No Entry";
+        CurrentLocationDisplay.text = "Currently: " + LocationName;
+    }
+
+    private string WayFindingInfoToString(OSMWayFindingInfo wayInfo)
+    {
+        string toReturn = "";
+        if (null != wayInfo.Way)
+        {
+            toReturn = wayInfo.Way.Name;
+            if (toReturn.Equals(""))
+            {
+                toReturn = "Name Unknown";
+            }
+            toReturn += "\n Distance: " + wayInfo.Distance.ToString("#") + " m";
+        }  
+        return toReturn;
+    }
+
     public void HideCompass()
     {
+        CurrentTargetDisplay.enabled = false;
         Compass.EnableCompassPointer(false);
     }
 
@@ -38,8 +78,7 @@ public class DisplayController : MonoBehaviour {
                 {
                     parkingSpaceName = "Name Unknown";
                 }
-                display.text = "Option " + (i + 1) + ": " + parkingSpaceName + 
-                    "\nDistance: " + Mathf.Sqrt( parkingSpacesSorted[i].DistanceSqr) + " m";
+                display.text = "Option " + (i + 1) + ": " + WayFindingInfoToString(parkingSpacesSorted[i]);
             }
         }
     }

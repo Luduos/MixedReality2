@@ -10,6 +10,12 @@ public class NavigationDebugDisplay : MonoBehaviour {
     private Material ParkingSpaceMaterial;
 
     [SerializeField]
+    private Material RoadMaterial;
+
+    [SerializeField]
+    private Material BuildingMaterial;
+
+    [SerializeField]
     private Color NormalHighwayLinkColor = Color.yellow;
 
     [SerializeField]
@@ -53,6 +59,22 @@ public class NavigationDebugDisplay : MonoBehaviour {
         foreach(OSMWay parkSpace in mapInfo.ParkSpaces)
         {
             BuildingBuilder.CreateBuilding(parkSpace, mapInfo, ParkingSpaceMaterial);  
+        }
+    }
+
+   public void SpawnRoads(OSMapInfo mapInfo)
+    {
+        foreach(OSMWay road in mapInfo.Roads)
+        {
+            RoadBuilder.CreateRoad(road, mapInfo, RoadMaterial);
+        }
+    }
+
+    public void SpawnBuildings(OSMapInfo mapInfo)
+    {
+        foreach(OSMWay building in mapInfo.Buildings)
+        {
+            BuildingBuilder.CreateBuilding(building, mapInfo, BuildingMaterial);
         }
     }
 

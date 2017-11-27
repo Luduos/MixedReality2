@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 public struct OSMWayFindingInfo
 {
-    public float DistanceSqr;
+    public float Distance;
     // Used to check, when we have reached the parking space
     public float NearestNodeDistance;
     public Vector3 WayCenter;
@@ -18,7 +18,7 @@ public class Navigator {
         {
             OSMWayFindingInfo info = new OSMWayFindingInfo();
             info.WayCenter = CalcWayCenter(mapInfo, pSpace);
-            info.DistanceSqr = (info.WayCenter - position).sqrMagnitude;
+            info.Distance = (info.WayCenter - position).magnitude;
             info.Way = pSpace;
             info.NearestNodeDistance = GetNearestNodeDistanceFromCenter(mapInfo, info);
             orderedParkingSpaces.Add(info);
@@ -55,9 +55,9 @@ public class Navigator {
     { 
         public int Compare(OSMWayFindingInfo x, OSMWayFindingInfo y)
         {
-            if (x.DistanceSqr > y.DistanceSqr)
+            if (x.Distance > y.Distance)
                 return 1;
-            if (x.DistanceSqr < y.DistanceSqr)
+            if (x.Distance < y.Distance)
                 return -1;
             else
                 return 0;
