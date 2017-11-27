@@ -13,14 +13,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PixelRect:
     serializedVersion: 2
-    x: 0
-    y: 43
-    width: 1920
-    height: 997
+    x: -1600
+    y: 139
+    width: 1600
+    height: 827
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 9}
-  m_MinSize: {x: 950, y: 412}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -36,10 +36,10 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 243
+    x: 202
     y: 0
-    width: 1117
-    height: 575
+    width: 931
+    height: 473
   m_MinSize: {x: 204, y: 221}
   m_MaxSize: {x: 4004, y: 4021}
   m_ActualView: {fileID: 21}
@@ -194,8 +194,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1920
-    height: 997
+    width: 1600
+    height: 827
   m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &10
@@ -214,7 +214,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1920
+    width: 1600
     height: 30
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -234,8 +234,8 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 977
-    width: 1920
+    y: 807
+    width: 1600
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -257,12 +257,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 30
-    width: 1920
-    height: 947
-  m_MinSize: {x: 679, y: 362}
-  m_MaxSize: {x: 12004, y: 8042}
+    width: 1600
+    height: 777
+  m_MinSize: {x: 683, y: 362}
+  m_MaxSize: {x: 12008, y: 8042}
   vertical: 0
-  controlID: 108
+  controlID: 51
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -281,12 +281,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1360
-    height: 947
-  m_MinSize: {x: 404, y: 362}
-  m_MaxSize: {x: 8004, y: 8042}
+    width: 1133
+    height: 777
+  m_MinSize: {x: 406, y: 362}
+  m_MaxSize: {x: 8006, y: 8042}
   vertical: 1
-  controlID: 109
+  controlID: 65
 --- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -305,12 +305,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1360
-    height: 575
-  m_MinSize: {x: 404, y: 221}
-  m_MaxSize: {x: 8004, y: 4021}
+    width: 1133
+    height: 473
+  m_MinSize: {x: 406, y: 221}
+  m_MaxSize: {x: 8006, y: 4021}
   vertical: 0
-  controlID: 110
+  controlID: 66
 --- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -327,10 +327,10 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 243
-    height: 575
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+    width: 202
+    height: 473
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 20}
   m_Panes:
   - {fileID: 20}
@@ -351,9 +351,9 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 575
-    width: 1360
-    height: 372
+    y: 473
+    width: 1133
+    height: 304
   m_MinSize: {x: 202, y: 141}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 18}
@@ -377,12 +377,12 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 1360
+    x: 1133
     y: 0
-    width: 560
-    height: 947
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+    width: 467
+    height: 777
+  m_MinSize: {x: 277, y: 71}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 25}
   m_Panes:
   - {fileID: 25}
@@ -410,129 +410,70 @@ MonoBehaviour:
   m_DepthBufferBits: 0
   m_Pos:
     serializedVersion: 2
-    x: 0
-    y: 667
-    width: 1358
-    height: 351
-  logPanelScroll: {x: 0, y: -112}
+    x: -1600
+    y: 661
+    width: 1131
+    height: 283
+  logPanelScroll: {x: 0, y: -90}
   logPanelSelectedIndex: -1
   logPanelAutoScroll: 1
-  currentFrame: 120496
+  currentFrame: 132652
   logs:
-    lastGrabbedIndex: 1
-    lastGrabbedCount: 2
+    lastGrabbedIndex: 2
+    lastGrabbedCount: 3
     proEntries:
-    - logType: 2
+    - logType: 3
       logPanelVisible: 1
       logPanelIndex: 0
-      logOutputHeight: 29
+      logOutputHeight: -1
       listIndex: 0
       nativeIndex: 0
       nativeIdentifier: 0
-      originalLog: 'Virtual reality enabled cannot be set while the Editor is in Play
-        mode.
-
-        UnityEditor.PlayerSettings:set_virtualRealitySupported(Boolean)'
-      originalStackTrace: 'Virtual reality enabled cannot be set while the Editor
-        is in Play mode.
-
-        UnityEditor.PlayerSettings:set_virtualRealitySupported(Boolean)
-
-        SteamVR_Settings:Update() (at Assets/SteamVR/Editor/SteamVR_Settings.cs:118)
-
-        UnityEditor.EditorApplication:Internal_CallUpdateFunctions()
+      originalLog: 'XR: OpenVR Error! OpenVR failed initialization with error code
+        VRInitError_Init_HmdNotFoundPresenceFailed: "Hmd Not Found Presence Failed
+        (126)"!'
+      originalStackTrace: 'XR: OpenVR Error! OpenVR failed initialization with error
+        code VRInitError_Init_HmdNotFoundPresenceFailed: "Hmd Not Found Presence Failed
+        (126)"!
 
 '
-      nativeFileName: Assets/SteamVR/Editor/SteamVR_Settings.cs
-      nativeLineNumber: 118
+      nativeFileName: C:/buildslave/unity/build/Runtime/VR/OpenVR/OpenVR.cpp
+      nativeLineNumber: 1541
       watchName: 
-      logText: 'Virtual reality enabled cannot be set while the Editor is in Play
-        mode.
-
-        UnityEditor.PlayerSettings:set_virtualRealitySupported(Boolean)'
-      logTruncatedText: 'Virtual reality enabled cannot be set while the Editor is
-        in Play mode.
-
-        UnityEditor.PlayerSettings:set_virtualRealitySupported(Boolean)'
-      logColumnText: 'Virtual reality enabled cannot be set while the Editor is in
-        Play mode.
-
-        UnityEditor.PlayerSettings:set_virtualRealitySupported(Boolean)'
+      logText: 'XR: OpenVR Error! OpenVR failed initialization with error code VRInitError_Init_HmdNotFoundPresenceFailed:
+        "Hmd Not Found Presence Failed (126)"!'
+      logTruncatedText: 'XR: OpenVR Error! OpenVR failed initialization with error
+        code VRInitError_Init_HmdNotFoundPresenceFailed: "Hmd Not Found Presence Failed
+        (126)"!'
+      logColumnText: 'XR: OpenVR Error! OpenVR failed initialization with error code
+        VRInitError_Init_HmdNotFoundPresenceFailed: "Hmd Not Found Presence Failed
+        (126)"!'
       fileName: 
       className: 
       namespaceName: 
-      lineCount: 2
-      hasSourceCode: 1
-      timeStamp: 0.35333335399627686
-      timeFrame: 3
+      lineCount: 1
+      hasSourceCode: 0
+      timeStamp: 0.019999999552965164
+      timeFrame: 2
       instanceID: 0
       collapsedCount: 0
-      cachedHeight: 33
-      cachedHeightLogWidth: 1314
-      stackEntries:
-      - fileName: Assets/SteamVR/Editor/SteamVR_Settings.cs
-        fileNameWithoutAssets: SteamVR/Editor/SteamVR_Settings.cs
-        fileNameWithoutAssetsPlusLineNumber: SteamVR/Editor/SteamVR_Settings.cs:118
-        fileNameWithoutPath: SteamVR_Settings.cs
-        fileNameWithoutPathPlusLineNumber: SteamVR_Settings.cs:118
-        instanceID: -1
-        className: SteamVR_Settings
-        methodName: Update
-        namespaceName: None
-        lineNumber: 118
-        charNumber: 0
-        stackLabel: SteamVR_Settings.Update()
-        stackLabel2: '    Assets/SteamVR/Editor/SteamVR_Settings.cs:118'
-        stackLabelContent:
-          m_Text: <b>SteamVR_Settings.Update()</b>    Assets/SteamVR/Editor/SteamVR_Settings.cs:118
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        stackLabelWidth: 583
-        stackLabelHeight: 23
-        stackSourceLineHeight: 15
-        sourceCode:
-        - '116:   if (!PlayerSettings.virtualRealitySupported)'
-        - '117:   {'
-        - '118:       PlayerSettings.virtualRealitySupported = true;'
-        - '119:       updated = true;'
-        - '120:   }'
-        showSource: 1
-      - fileName: None
-        fileNameWithoutAssets: None
-        fileNameWithoutAssetsPlusLineNumber: None
-        fileNameWithoutPath: None
-        fileNameWithoutPathPlusLineNumber: None
-        instanceID: -1
-        className: EditorApplication
-        methodName: Internal_CallUpdateFunctions
-        namespaceName: UnityEditor
-        lineNumber: 0
-        charNumber: 0
-        stackLabel: EditorApplication.Internal_CallUpdateFunctions()
-        stackLabel2: 
-        stackLabelContent:
-          m_Text: <b>EditorApplication.Internal_CallUpdateFunctions()</b>
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        stackLabelWidth: 382
-        stackLabelHeight: 23
-        stackSourceLineHeight: 15
-        sourceCode: []
-        showSource: 1
+      cachedHeight: 20
+      cachedHeightLogWidth: 1087
+      stackEntries: []
       ignoredStackEntries: []
       lastMatchedCount: 1
       belongsToFilters:
-      - name: Warning
+      - name: Error
         isEnabled: 1
         collapsed: 1
-        itemGUID: 755fe0eb-bae9-4499-bf12-ca533c2eb313
+        itemGUID: 7151aac7-c58e-4f4f-a40f-735e70fb7e40
         filterName: 
-        mainColor: {r: 1, g: 0.84, b: 0.02, a: 0.7}
+        mainColor: {r: 1, g: 0, b: 0, a: 0.7}
         isStandardFilter: 1
         isTempFilter: 0
-        useAdvancedColors: 0
+        useAdvancedColors: 1
         customTextColor: {r: 1, g: 1, b: 1, a: 1}
-        customBackgroundColor: {r: 1, g: 1, b: 1, a: 1}
+        customBackgroundColor: {r: 1, g: 0, b: 0, a: 0.7}
         swallowStandard: 1
         overrideStandardColors: 1
         overrideStandardIcon: 1
@@ -551,7 +492,7 @@ MonoBehaviour:
           - name: 
             isEnabled: 1
             collapsed: 0
-            itemGUID: bf206440-189e-451a-887c-2ed9d503fe58
+            itemGUID: 49a2fda4-1d57-4884-8eda-da4d8bdb81b0
             searchString: <Any>
             searchType: 1
             removeSearchStringFromLog: 0
@@ -560,13 +501,13 @@ MonoBehaviour:
               - name: 
                 isEnabled: 1
                 collapsed: 0
-                itemGUID: aa17b178-fe6c-4ed2-956a-06ab2adc3b31
-                logType: 2
+                itemGUID: 6e4c2561-9080-4aea-9c61-4a902d718b2e
+                logType: 3
               - name: 
                 isEnabled: 1
                 collapsed: 0
-                itemGUID: d696edf6-ee27-467b-8fd6-c324d69e72e8
-                logType: 5
+                itemGUID: f7c2acf7-3454-435f-945f-382126f7b7af
+                logType: 6
               selectionList: 0
               collapsable: 1
               collapsed: 0
@@ -575,7 +516,7 @@ MonoBehaviour:
               - name: 
                 isEnabled: 1
                 collapsed: 0
-                itemGUID: 7c084ef7-488c-4dd2-a4b8-822da0040e28
+                itemGUID: 2327a22b-4ed6-4113-843a-2db84ae321b1
                 columnType: 1
               selectionList: 0
               collapsable: 1
@@ -590,14 +531,14 @@ MonoBehaviour:
           itemGUID: 
           iconType: 3
           iconType2: 1
-          iconText: '!'
+          iconText: X
           useIconTextFirstLetter: 0
           useIconLogColor: 0
           iconColor: {r: 1, g: 1, b: 1, a: 1}
           iconBuiltInID: BACKGROUNDS_ECPBGROUNDEDSQUARE
           iconTextureGUID: 
           useIconShadow: 1
-          iconOffset: {x: 0, y: 2}
+          iconOffset: {x: 0, y: 0}
           iconShadowOffset: {x: 0.5, y: 0.5}
           iconSize: 7
         iconSymbol:
@@ -628,7 +569,7 @@ MonoBehaviour:
           useIconTextFirstLetter: 1
           useIconLogColor: 1
           iconColor: {r: 1, g: 1, b: 1, a: 1}
-          iconBuiltInID: BACKGROUNDS_ECPBGTRIANGLE
+          iconBuiltInID: BACKGROUNDS_ECPBGROUNDEDSQUARE
           iconTextureGUID: 
           useIconShadow: 1
           iconOffset: {x: 0, y: 0}
@@ -655,17 +596,17 @@ MonoBehaviour:
         hideLabelInToolbar: 0
         hideWhenNoMatches: 0
       belongsToStandardFilters:
-      - name: Warning
+      - name: Error
         isEnabled: 1
         collapsed: 1
-        itemGUID: 755fe0eb-bae9-4499-bf12-ca533c2eb313
+        itemGUID: 7151aac7-c58e-4f4f-a40f-735e70fb7e40
         filterName: 
-        mainColor: {r: 1, g: 0.84, b: 0.02, a: 0.7}
+        mainColor: {r: 1, g: 0, b: 0, a: 0.7}
         isStandardFilter: 1
         isTempFilter: 0
-        useAdvancedColors: 0
+        useAdvancedColors: 1
         customTextColor: {r: 1, g: 1, b: 1, a: 1}
-        customBackgroundColor: {r: 1, g: 1, b: 1, a: 1}
+        customBackgroundColor: {r: 1, g: 0, b: 0, a: 0.7}
         swallowStandard: 1
         overrideStandardColors: 1
         overrideStandardIcon: 1
@@ -684,7 +625,7 @@ MonoBehaviour:
           - name: 
             isEnabled: 1
             collapsed: 0
-            itemGUID: bf206440-189e-451a-887c-2ed9d503fe58
+            itemGUID: 49a2fda4-1d57-4884-8eda-da4d8bdb81b0
             searchString: <Any>
             searchType: 1
             removeSearchStringFromLog: 0
@@ -693,13 +634,13 @@ MonoBehaviour:
               - name: 
                 isEnabled: 1
                 collapsed: 0
-                itemGUID: aa17b178-fe6c-4ed2-956a-06ab2adc3b31
-                logType: 2
+                itemGUID: 6e4c2561-9080-4aea-9c61-4a902d718b2e
+                logType: 3
               - name: 
                 isEnabled: 1
                 collapsed: 0
-                itemGUID: d696edf6-ee27-467b-8fd6-c324d69e72e8
-                logType: 5
+                itemGUID: f7c2acf7-3454-435f-945f-382126f7b7af
+                logType: 6
               selectionList: 0
               collapsable: 1
               collapsed: 0
@@ -708,7 +649,7 @@ MonoBehaviour:
               - name: 
                 isEnabled: 1
                 collapsed: 0
-                itemGUID: 7c084ef7-488c-4dd2-a4b8-822da0040e28
+                itemGUID: 2327a22b-4ed6-4113-843a-2db84ae321b1
                 columnType: 1
               selectionList: 0
               collapsable: 1
@@ -723,14 +664,14 @@ MonoBehaviour:
           itemGUID: 
           iconType: 3
           iconType2: 1
-          iconText: '!'
+          iconText: X
           useIconTextFirstLetter: 0
           useIconLogColor: 0
           iconColor: {r: 1, g: 1, b: 1, a: 1}
           iconBuiltInID: BACKGROUNDS_ECPBGROUNDEDSQUARE
           iconTextureGUID: 
           useIconShadow: 1
-          iconOffset: {x: 0, y: 2}
+          iconOffset: {x: 0, y: 0}
           iconShadowOffset: {x: 0.5, y: 0.5}
           iconSize: 7
         iconSymbol:
@@ -761,7 +702,7 @@ MonoBehaviour:
           useIconTextFirstLetter: 1
           useIconLogColor: 1
           iconColor: {r: 1, g: 1, b: 1, a: 1}
-          iconBuiltInID: BACKGROUNDS_ECPBGTRIANGLE
+          iconBuiltInID: BACKGROUNDS_ECPBGROUNDEDSQUARE
           iconTextureGUID: 
           useIconShadow: 1
           iconOffset: {x: 0, y: 0}
@@ -890,90 +831,124 @@ MonoBehaviour:
         hideWhenNoMatches: 0
     - logType: 1
       logPanelVisible: 1
-      logPanelIndex: 0
-      logOutputHeight: -1
+      logPanelIndex: 1
+      logOutputHeight: 16
       listIndex: 1
       nativeIndex: 1
       nativeIdentifier: 0
-      originalLog: Switching to native OpenVR support.
-      originalStackTrace: 'Switching to native OpenVR support.
+      originalLog: OpenVR initialization failed.  Ensure 'Virtual Reality Supported'
+        is checked in Player Settings, and OpenVR is added to the list of Virtual
+        Reality SDKs.
+      originalStackTrace: 'OpenVR initialization failed.  Ensure ''Virtual Reality
+        Supported'' is checked in Player Settings, and OpenVR is added to the list
+        of Virtual Reality SDKs.
 
         UnityEngine.Debug:Log(Object)
 
-        SteamVR_Settings:Update() (at Assets/SteamVR/Editor/SteamVR_Settings.cs:156)
+        SteamVR:CreateInstance() (at Assets/SteamVR/Scripts/SteamVR.cs:71)
 
-        UnityEditor.EditorApplication:Internal_CallUpdateFunctions()
+        SteamVR:get_instance() (at Assets/SteamVR/Scripts/SteamVR.cs:48)
+
+        SteamVR_Render:OnEnable() (at Assets/SteamVR/Scripts/SteamVR_Render.cs:287)
 
 '
-      nativeFileName: Assets/SteamVR/Editor/SteamVR_Settings.cs
-      nativeLineNumber: 156
+      nativeFileName: Assets/SteamVR/Scripts/SteamVR.cs
+      nativeLineNumber: 71
       watchName: 
-      logText: Switching to native OpenVR support.
-      logTruncatedText: Switching to native OpenVR support.
-      logColumnText: Switching to native OpenVR support.
+      logText: OpenVR initialization failed.  Ensure 'Virtual Reality Supported' is
+        checked in Player Settings, and OpenVR is added to the list of Virtual Reality
+        SDKs.
+      logTruncatedText: OpenVR initialization failed.  Ensure 'Virtual Reality Supported'
+        is checked in Player Settings, and OpenVR is added to the list of Virtual
+        Reality SDKs.
+      logColumnText: OpenVR initialization failed.  Ensure 'Virtual Reality Supported'
+        is checked in Player Settings, and OpenVR is added to the list of Virtual
+        Reality SDKs.
       fileName: 
       className: 
       namespaceName: 
       lineCount: 1
       hasSourceCode: 0
-      timeStamp: 0.35333335399627686
-      timeFrame: 3
+      timeStamp: 0.019999999552965164
+      timeFrame: 2
       instanceID: 0
       collapsedCount: 0
-      cachedHeight: -1
-      cachedHeightLogWidth: 0
+      cachedHeight: 20
+      cachedHeightLogWidth: 1087
       stackEntries:
-      - fileName: Assets/SteamVR/Editor/SteamVR_Settings.cs
-        fileNameWithoutAssets: SteamVR/Editor/SteamVR_Settings.cs
-        fileNameWithoutAssetsPlusLineNumber: SteamVR/Editor/SteamVR_Settings.cs:156
-        fileNameWithoutPath: SteamVR_Settings.cs
-        fileNameWithoutPathPlusLineNumber: SteamVR_Settings.cs:156
+      - fileName: Assets/SteamVR/Scripts/SteamVR.cs
+        fileNameWithoutAssets: SteamVR/Scripts/SteamVR.cs
+        fileNameWithoutAssetsPlusLineNumber: SteamVR/Scripts/SteamVR.cs:71
+        fileNameWithoutPath: SteamVR.cs
+        fileNameWithoutPathPlusLineNumber: SteamVR.cs:71
         instanceID: -1
-        className: SteamVR_Settings
-        methodName: Update
+        className: SteamVR
+        methodName: CreateInstance
         namespaceName: None
-        lineNumber: 156
+        lineNumber: 71
         charNumber: 0
-        stackLabel: SteamVR_Settings.Update()
-        stackLabel2: '    Assets/SteamVR/Editor/SteamVR_Settings.cs:156'
+        stackLabel: SteamVR.CreateInstance()
+        stackLabel2: '    Assets/SteamVR/Scripts/SteamVR.cs:71'
         stackLabelContent:
-          m_Text: 
+          m_Text: <b>SteamVR.CreateInstance()</b>    Assets/SteamVR/Scripts/SteamVR.cs:71
           m_Image: {fileID: 0}
           m_Tooltip: 
-        stackLabelWidth: 0
-        stackLabelHeight: 0
-        stackSourceLineHeight: 0
+        stackLabelWidth: 513
+        stackLabelHeight: 23
+        stackSourceLineHeight: 15
         sourceCode: []
         showSource: 1
-      - fileName: None
-        fileNameWithoutAssets: None
-        fileNameWithoutAssetsPlusLineNumber: None
-        fileNameWithoutPath: None
-        fileNameWithoutPathPlusLineNumber: None
+      - fileName: Assets/SteamVR/Scripts/SteamVR.cs
+        fileNameWithoutAssets: SteamVR/Scripts/SteamVR.cs
+        fileNameWithoutAssetsPlusLineNumber: SteamVR/Scripts/SteamVR.cs:48
+        fileNameWithoutPath: SteamVR.cs
+        fileNameWithoutPathPlusLineNumber: SteamVR.cs:48
         instanceID: -1
-        className: EditorApplication
-        methodName: Internal_CallUpdateFunctions
-        namespaceName: UnityEditor
-        lineNumber: 0
+        className: SteamVR
+        methodName: get_instance
+        namespaceName: None
+        lineNumber: 48
         charNumber: 0
-        stackLabel: EditorApplication.Internal_CallUpdateFunctions()
-        stackLabel2: 
+        stackLabel: SteamVR.get_instance()
+        stackLabel2: '    Assets/SteamVR/Scripts/SteamVR.cs:48'
         stackLabelContent:
-          m_Text: 
+          m_Text: <b>SteamVR.get_instance()</b>    Assets/SteamVR/Scripts/SteamVR.cs:48
           m_Image: {fileID: 0}
           m_Tooltip: 
-        stackLabelWidth: 0
-        stackLabelHeight: 0
-        stackSourceLineHeight: 0
+        stackLabelWidth: 497
+        stackLabelHeight: 23
+        stackSourceLineHeight: 15
+        sourceCode: []
+        showSource: 1
+      - fileName: Assets/SteamVR/Scripts/SteamVR_Render.cs
+        fileNameWithoutAssets: SteamVR/Scripts/SteamVR_Render.cs
+        fileNameWithoutAssetsPlusLineNumber: SteamVR/Scripts/SteamVR_Render.cs:287
+        fileNameWithoutPath: SteamVR_Render.cs
+        fileNameWithoutPathPlusLineNumber: SteamVR_Render.cs:287
+        instanceID: -1
+        className: SteamVR_Render
+        methodName: OnEnable
+        namespaceName: None
+        lineNumber: 287
+        charNumber: 0
+        stackLabel: SteamVR_Render.OnEnable()
+        stackLabel2: '    Assets/SteamVR/Scripts/SteamVR_Render.cs:287'
+        stackLabelContent:
+          m_Text: <b>SteamVR_Render.OnEnable()</b>    Assets/SteamVR/Scripts/SteamVR_Render.cs:287
+          m_Image: {fileID: 0}
+          m_Tooltip: 
+        stackLabelWidth: 590
+        stackLabelHeight: 23
+        stackSourceLineHeight: 15
         sourceCode: []
         showSource: 1
       ignoredStackEntries: []
-      lastMatchedCount: 0
+      lastMatchedCount: 1
       belongsToFilters:
       - name: Log
         isEnabled: 1
         collapsed: 1
-        itemGUID: f8c56b53-bffb-41a2-ab83-e2f2e67ddd1a
+        itemGUID: d3a92ee9-95fa-4e71-a3ea-b75f5b4039ae
         filterName: 
         mainColor: {r: 1, g: 1, b: 1, a: 1}
         isStandardFilter: 1
@@ -999,7 +974,7 @@ MonoBehaviour:
           - name: 
             isEnabled: 1
             collapsed: 0
-            itemGUID: d31f3b70-77fc-458d-9116-3ea1ee7b2561
+            itemGUID: 19daf486-7509-4b03-9cc5-cd2f426a0c94
             searchString: <Any>
             searchType: 1
             removeSearchStringFromLog: 0
@@ -1008,7 +983,7 @@ MonoBehaviour:
               - name: 
                 isEnabled: 1
                 collapsed: 0
-                itemGUID: 88ab00d4-489d-4c55-8f4d-d9f12eddeefe
+                itemGUID: 67379872-0cd3-4636-921e-b724ab3f8a5f
                 logType: 1
               selectionList: 0
               collapsable: 1
@@ -1018,7 +993,7 @@ MonoBehaviour:
               - name: 
                 isEnabled: 1
                 collapsed: 0
-                itemGUID: ab92a623-7ec8-4908-b9e2-5a7649ef4349
+                itemGUID: 2981006d-cdde-4920-a940-4917f65a54ae
                 columnType: 1
               selectionList: 0
               collapsable: 1
@@ -1101,7 +1076,7 @@ MonoBehaviour:
       - name: Log
         isEnabled: 1
         collapsed: 1
-        itemGUID: f8c56b53-bffb-41a2-ab83-e2f2e67ddd1a
+        itemGUID: d3a92ee9-95fa-4e71-a3ea-b75f5b4039ae
         filterName: 
         mainColor: {r: 1, g: 1, b: 1, a: 1}
         isStandardFilter: 1
@@ -1127,7 +1102,7 @@ MonoBehaviour:
           - name: 
             isEnabled: 1
             collapsed: 0
-            itemGUID: d31f3b70-77fc-458d-9116-3ea1ee7b2561
+            itemGUID: 19daf486-7509-4b03-9cc5-cd2f426a0c94
             searchString: <Any>
             searchType: 1
             removeSearchStringFromLog: 0
@@ -1136,7 +1111,7 @@ MonoBehaviour:
               - name: 
                 isEnabled: 1
                 collapsed: 0
-                itemGUID: 88ab00d4-489d-4c55-8f4d-d9f12eddeefe
+                itemGUID: 67379872-0cd3-4636-921e-b724ab3f8a5f
                 logType: 1
               selectionList: 0
               collapsable: 1
@@ -1146,7 +1121,451 @@ MonoBehaviour:
               - name: 
                 isEnabled: 1
                 collapsed: 0
-                itemGUID: ab92a623-7ec8-4908-b9e2-5a7649ef4349
+                itemGUID: 2981006d-cdde-4920-a940-4917f65a54ae
+                columnType: 1
+              selectionList: 0
+              collapsable: 1
+              collapsed: 0
+          selectionList: 0
+          collapsable: 1
+          collapsed: 0
+        iconLetter:
+          name: 
+          isEnabled: 1
+          collapsed: 0
+          itemGUID: 
+          iconType: 1
+          iconType2: 1
+          iconText: A
+          useIconTextFirstLetter: 1
+          useIconLogColor: 1
+          iconColor: {r: 1, g: 1, b: 1, a: 1}
+          iconBuiltInID: BACKGROUNDS_ECPBGROUNDEDSQUARE
+          iconTextureGUID: 
+          useIconShadow: 1
+          iconOffset: {x: 0, y: 0}
+          iconShadowOffset: {x: 0.5, y: 0.5}
+          iconSize: 13
+        iconSymbol:
+          name: 
+          isEnabled: 1
+          collapsed: 0
+          itemGUID: 
+          iconType: 1
+          iconType2: 1
+          iconText: A
+          useIconTextFirstLetter: 1
+          useIconLogColor: 1
+          iconColor: {r: 1, g: 1, b: 1, a: 1}
+          iconBuiltInID: BACKGROUNDS_ECPBGROUNDEDSQUARE
+          iconTextureGUID: 
+          useIconShadow: 1
+          iconOffset: {x: 0, y: 0}
+          iconShadowOffset: {x: 0.5, y: 0.5}
+          iconSize: 13
+        iconBackground:
+          name: 
+          isEnabled: 1
+          collapsed: 0
+          itemGUID: 
+          iconType: 1
+          iconType2: 1
+          iconText: A
+          useIconTextFirstLetter: 1
+          useIconLogColor: 1
+          iconColor: {r: 1, g: 1, b: 1, a: 1}
+          iconBuiltInID: BACKGROUNDS_ECPLOGICON
+          iconTextureGUID: 
+          useIconShadow: 1
+          iconOffset: {x: 0, y: 0}
+          iconShadowOffset: {x: 0.5, y: 0.5}
+          iconSize: 13
+        iconTexture:
+          name: 
+          isEnabled: 1
+          collapsed: 0
+          itemGUID: 
+          iconType: 1
+          iconType2: 1
+          iconText: A
+          useIconTextFirstLetter: 1
+          useIconLogColor: 1
+          iconColor: {r: 1, g: 1, b: 1, a: 1}
+          iconBuiltInID: BACKGROUNDS_ECPBGROUNDEDSQUARE
+          iconTextureGUID: 
+          useIconShadow: 1
+          iconOffset: {x: 0, y: 0}
+          iconShadowOffset: {x: 0.5, y: 0.5}
+          iconSize: 13
+        showInToolbar: 1
+        hideLabelInToolbar: 0
+        hideWhenNoMatches: 0
+      assignedTempFilter:
+        name: 
+        isEnabled: 1
+        collapsed: 0
+        itemGUID: 
+        filterName: 
+        mainColor: {r: 1, g: 1, b: 1, a: 1}
+        isStandardFilter: 0
+        isTempFilter: 0
+        useAdvancedColors: 0
+        customTextColor: {r: 1, g: 1, b: 1, a: 1}
+        customBackgroundColor: {r: 1, g: 1, b: 1, a: 1}
+        swallowStandard: 1
+        overrideStandardColors: 1
+        overrideStandardIcon: 1
+        collapseIconBackground: 0
+        collapseIconSymbol: 0
+        collapseIconLetter: 0
+        collapseIconTexture: 0
+        useIconBackground: 1
+        useIconSymbol: 0
+        useIconLetter: 0
+        useIconTexture: 0
+        filterFormatVersion: -1
+        iconColorize: 0
+        searchList:
+          list: []
+          selectionList: 0
+          collapsable: 1
+          collapsed: 0
+        iconLetter:
+          name: 
+          isEnabled: 1
+          collapsed: 0
+          itemGUID: 
+          iconType: 1
+          iconType2: 1
+          iconText: A
+          useIconTextFirstLetter: 1
+          useIconLogColor: 1
+          iconColor: {r: 1, g: 1, b: 1, a: 1}
+          iconBuiltInID: BACKGROUNDS_ECPBGROUNDEDSQUARE
+          iconTextureGUID: 
+          useIconShadow: 1
+          iconOffset: {x: 0, y: 0}
+          iconShadowOffset: {x: 0.5, y: 0.5}
+          iconSize: 13
+        iconSymbol:
+          name: 
+          isEnabled: 1
+          collapsed: 0
+          itemGUID: 
+          iconType: 1
+          iconType2: 1
+          iconText: A
+          useIconTextFirstLetter: 1
+          useIconLogColor: 1
+          iconColor: {r: 1, g: 1, b: 1, a: 1}
+          iconBuiltInID: BACKGROUNDS_ECPBGROUNDEDSQUARE
+          iconTextureGUID: 
+          useIconShadow: 1
+          iconOffset: {x: 0, y: 0}
+          iconShadowOffset: {x: 0.5, y: 0.5}
+          iconSize: 13
+        iconBackground:
+          name: 
+          isEnabled: 1
+          collapsed: 0
+          itemGUID: 
+          iconType: 1
+          iconType2: 1
+          iconText: A
+          useIconTextFirstLetter: 1
+          useIconLogColor: 1
+          iconColor: {r: 1, g: 1, b: 1, a: 1}
+          iconBuiltInID: BACKGROUNDS_ECPBGROUNDEDSQUARE
+          iconTextureGUID: 
+          useIconShadow: 1
+          iconOffset: {x: 0, y: 0}
+          iconShadowOffset: {x: 0.5, y: 0.5}
+          iconSize: 13
+        iconTexture:
+          name: 
+          isEnabled: 1
+          collapsed: 0
+          itemGUID: 
+          iconType: 1
+          iconType2: 1
+          iconText: A
+          useIconTextFirstLetter: 1
+          useIconLogColor: 1
+          iconColor: {r: 1, g: 1, b: 1, a: 1}
+          iconBuiltInID: BACKGROUNDS_ECPBGROUNDEDSQUARE
+          iconTextureGUID: 
+          useIconShadow: 1
+          iconOffset: {x: 0, y: 0}
+          iconShadowOffset: {x: 0.5, y: 0.5}
+          iconSize: 13
+        showInToolbar: 1
+        hideLabelInToolbar: 0
+        hideWhenNoMatches: 0
+    - logType: 1
+      logPanelVisible: 1
+      logPanelIndex: 2
+      logOutputHeight: 16
+      listIndex: 2
+      nativeIndex: 2
+      nativeIdentifier: 0
+      originalLog: Search
+      originalStackTrace: 'Search
+
+        UnityEngine.Debug:Log(Object)
+
+        Recognition:KeywordRecognizerOnPhraseRecognized(PhraseRecognizedEventArgs)
+        (at Assets/_Scripts/Speech/Recognition.cs:80)
+
+        UnityEngine.Windows.Speech.PhraseRecognizer:InvokePhraseRecognizedEvent(String,
+        ConfidenceLevel, SemanticMeaning[], Int64, Int64)
+
+'
+      nativeFileName: Assets/_Scripts/Speech/Recognition.cs
+      nativeLineNumber: 80
+      watchName: 
+      logText: Search
+      logTruncatedText: Search
+      logColumnText: Search
+      fileName: 
+      className: 
+      namespaceName: 
+      lineCount: 1
+      hasSourceCode: 1
+      timeStamp: 2.2999489307403564
+      timeFrame: 301
+      instanceID: 0
+      collapsedCount: 0
+      cachedHeight: 20
+      cachedHeightLogWidth: 1087
+      stackEntries:
+      - fileName: Assets/_Scripts/Speech/Recognition.cs
+        fileNameWithoutAssets: _Scripts/Speech/Recognition.cs
+        fileNameWithoutAssetsPlusLineNumber: _Scripts/Speech/Recognition.cs:80
+        fileNameWithoutPath: Recognition.cs
+        fileNameWithoutPathPlusLineNumber: Recognition.cs:80
+        instanceID: -1
+        className: Recognition
+        methodName: KeywordRecognizerOnPhraseRecognized
+        namespaceName: None
+        lineNumber: 80
+        charNumber: 0
+        stackLabel: Recognition.KeywordRecognizerOnPhraseRecognized()
+        stackLabel2: '    Assets/_Scripts/Speech/Recognition.cs:80'
+        stackLabelContent:
+          m_Text: <b>Recognition.KeywordRecognizerOnPhraseRecognized()</b>    Assets/_Scripts/Speech/Recognition.cs:80
+          m_Image: {fileID: 0}
+          m_Tooltip: 
+        stackLabelWidth: 713
+        stackLabelHeight: 23
+        stackSourceLineHeight: 15
+        sourceCode:
+        - '78:   {'
+        - '79:       keywordAction.Invoke();'
+        - '80:       Debug.Log(args.text);'
+        - '81:   }'
+        showSource: 1
+      - fileName: None
+        fileNameWithoutAssets: None
+        fileNameWithoutAssetsPlusLineNumber: None
+        fileNameWithoutPath: None
+        fileNameWithoutPathPlusLineNumber: None
+        instanceID: -1
+        className: PhraseRecognizer
+        methodName: InvokePhraseRecognizedEvent
+        namespaceName: UnityEngine.Windows.Speech
+        lineNumber: 0
+        charNumber: 0
+        stackLabel: PhraseRecognizer.InvokePhraseRecognizedEvent()
+        stackLabel2: 
+        stackLabelContent:
+          m_Text: <b>PhraseRecognizer.InvokePhraseRecognizedEvent()</b>
+          m_Image: {fileID: 0}
+          m_Tooltip: 
+        stackLabelWidth: 395
+        stackLabelHeight: 23
+        stackSourceLineHeight: 15
+        sourceCode: []
+        showSource: 1
+      ignoredStackEntries: []
+      lastMatchedCount: 1
+      belongsToFilters:
+      - name: Log
+        isEnabled: 1
+        collapsed: 1
+        itemGUID: d3a92ee9-95fa-4e71-a3ea-b75f5b4039ae
+        filterName: 
+        mainColor: {r: 1, g: 1, b: 1, a: 1}
+        isStandardFilter: 1
+        isTempFilter: 0
+        useAdvancedColors: 0
+        customTextColor: {r: 1, g: 1, b: 1, a: 1}
+        customBackgroundColor: {r: 1, g: 1, b: 1, a: 1}
+        swallowStandard: 1
+        overrideStandardColors: 1
+        overrideStandardIcon: 1
+        collapseIconBackground: 0
+        collapseIconSymbol: 0
+        collapseIconLetter: 0
+        collapseIconTexture: 0
+        useIconBackground: 1
+        useIconSymbol: 0
+        useIconLetter: 0
+        useIconTexture: 0
+        filterFormatVersion: 1
+        iconColorize: 0
+        searchList:
+          list:
+          - name: 
+            isEnabled: 1
+            collapsed: 0
+            itemGUID: 19daf486-7509-4b03-9cc5-cd2f426a0c94
+            searchString: <Any>
+            searchType: 1
+            removeSearchStringFromLog: 0
+            logTypeList:
+              list:
+              - name: 
+                isEnabled: 1
+                collapsed: 0
+                itemGUID: 67379872-0cd3-4636-921e-b724ab3f8a5f
+                logType: 1
+              selectionList: 0
+              collapsable: 1
+              collapsed: 0
+            columnTypeList:
+              list:
+              - name: 
+                isEnabled: 1
+                collapsed: 0
+                itemGUID: 2981006d-cdde-4920-a940-4917f65a54ae
+                columnType: 1
+              selectionList: 0
+              collapsable: 1
+              collapsed: 0
+          selectionList: 0
+          collapsable: 1
+          collapsed: 0
+        iconLetter:
+          name: 
+          isEnabled: 1
+          collapsed: 0
+          itemGUID: 
+          iconType: 1
+          iconType2: 1
+          iconText: A
+          useIconTextFirstLetter: 1
+          useIconLogColor: 1
+          iconColor: {r: 1, g: 1, b: 1, a: 1}
+          iconBuiltInID: BACKGROUNDS_ECPBGROUNDEDSQUARE
+          iconTextureGUID: 
+          useIconShadow: 1
+          iconOffset: {x: 0, y: 0}
+          iconShadowOffset: {x: 0.5, y: 0.5}
+          iconSize: 13
+        iconSymbol:
+          name: 
+          isEnabled: 1
+          collapsed: 0
+          itemGUID: 
+          iconType: 1
+          iconType2: 1
+          iconText: A
+          useIconTextFirstLetter: 1
+          useIconLogColor: 1
+          iconColor: {r: 1, g: 1, b: 1, a: 1}
+          iconBuiltInID: BACKGROUNDS_ECPBGROUNDEDSQUARE
+          iconTextureGUID: 
+          useIconShadow: 1
+          iconOffset: {x: 0, y: 0}
+          iconShadowOffset: {x: 0.5, y: 0.5}
+          iconSize: 13
+        iconBackground:
+          name: 
+          isEnabled: 1
+          collapsed: 0
+          itemGUID: 
+          iconType: 1
+          iconType2: 1
+          iconText: A
+          useIconTextFirstLetter: 1
+          useIconLogColor: 1
+          iconColor: {r: 1, g: 1, b: 1, a: 1}
+          iconBuiltInID: BACKGROUNDS_ECPLOGICON
+          iconTextureGUID: 
+          useIconShadow: 1
+          iconOffset: {x: 0, y: 0}
+          iconShadowOffset: {x: 0.5, y: 0.5}
+          iconSize: 13
+        iconTexture:
+          name: 
+          isEnabled: 1
+          collapsed: 0
+          itemGUID: 
+          iconType: 1
+          iconType2: 1
+          iconText: A
+          useIconTextFirstLetter: 1
+          useIconLogColor: 1
+          iconColor: {r: 1, g: 1, b: 1, a: 1}
+          iconBuiltInID: BACKGROUNDS_ECPBGROUNDEDSQUARE
+          iconTextureGUID: 
+          useIconShadow: 1
+          iconOffset: {x: 0, y: 0}
+          iconShadowOffset: {x: 0.5, y: 0.5}
+          iconSize: 13
+        showInToolbar: 1
+        hideLabelInToolbar: 0
+        hideWhenNoMatches: 0
+      belongsToStandardFilters:
+      - name: Log
+        isEnabled: 1
+        collapsed: 1
+        itemGUID: d3a92ee9-95fa-4e71-a3ea-b75f5b4039ae
+        filterName: 
+        mainColor: {r: 1, g: 1, b: 1, a: 1}
+        isStandardFilter: 1
+        isTempFilter: 0
+        useAdvancedColors: 0
+        customTextColor: {r: 1, g: 1, b: 1, a: 1}
+        customBackgroundColor: {r: 1, g: 1, b: 1, a: 1}
+        swallowStandard: 1
+        overrideStandardColors: 1
+        overrideStandardIcon: 1
+        collapseIconBackground: 0
+        collapseIconSymbol: 0
+        collapseIconLetter: 0
+        collapseIconTexture: 0
+        useIconBackground: 1
+        useIconSymbol: 0
+        useIconLetter: 0
+        useIconTexture: 0
+        filterFormatVersion: 1
+        iconColorize: 0
+        searchList:
+          list:
+          - name: 
+            isEnabled: 1
+            collapsed: 0
+            itemGUID: 19daf486-7509-4b03-9cc5-cd2f426a0c94
+            searchString: <Any>
+            searchType: 1
+            removeSearchStringFromLog: 0
+            logTypeList:
+              list:
+              - name: 
+                isEnabled: 1
+                collapsed: 0
+                itemGUID: 67379872-0cd3-4636-921e-b724ab3f8a5f
+                logType: 1
+              selectionList: 0
+              collapsable: 1
+              collapsed: 0
+            columnTypeList:
+              list:
+              - name: 
+                isEnabled: 1
+                collapsed: 0
+                itemGUID: 2981006d-cdde-4920-a940-4917f65a54ae
                 columnType: 1
               selectionList: 0
               collapsable: 1
@@ -1331,117 +1750,58 @@ MonoBehaviour:
     compilerErrorEntries: []
     timeFrames: 
     _filteredEntries:
-    - logType: 2
+    - logType: 3
       logPanelVisible: 1
       logPanelIndex: 0
-      logOutputHeight: 29
+      logOutputHeight: -1
       listIndex: 0
       nativeIndex: 0
       nativeIdentifier: 0
-      originalLog: 'Virtual reality enabled cannot be set while the Editor is in Play
-        mode.
-
-        UnityEditor.PlayerSettings:set_virtualRealitySupported(Boolean)'
-      originalStackTrace: 'Virtual reality enabled cannot be set while the Editor
-        is in Play mode.
-
-        UnityEditor.PlayerSettings:set_virtualRealitySupported(Boolean)
-
-        SteamVR_Settings:Update() (at Assets/SteamVR/Editor/SteamVR_Settings.cs:118)
-
-        UnityEditor.EditorApplication:Internal_CallUpdateFunctions()
+      originalLog: 'XR: OpenVR Error! OpenVR failed initialization with error code
+        VRInitError_Init_HmdNotFoundPresenceFailed: "Hmd Not Found Presence Failed
+        (126)"!'
+      originalStackTrace: 'XR: OpenVR Error! OpenVR failed initialization with error
+        code VRInitError_Init_HmdNotFoundPresenceFailed: "Hmd Not Found Presence Failed
+        (126)"!
 
 '
-      nativeFileName: Assets/SteamVR/Editor/SteamVR_Settings.cs
-      nativeLineNumber: 118
+      nativeFileName: C:/buildslave/unity/build/Runtime/VR/OpenVR/OpenVR.cpp
+      nativeLineNumber: 1541
       watchName: 
-      logText: 'Virtual reality enabled cannot be set while the Editor is in Play
-        mode.
-
-        UnityEditor.PlayerSettings:set_virtualRealitySupported(Boolean)'
-      logTruncatedText: 'Virtual reality enabled cannot be set while the Editor is
-        in Play mode.
-
-        UnityEditor.PlayerSettings:set_virtualRealitySupported(Boolean)'
-      logColumnText: 'Virtual reality enabled cannot be set while the Editor is in
-        Play mode.
-
-        UnityEditor.PlayerSettings:set_virtualRealitySupported(Boolean)'
+      logText: 'XR: OpenVR Error! OpenVR failed initialization with error code VRInitError_Init_HmdNotFoundPresenceFailed:
+        "Hmd Not Found Presence Failed (126)"!'
+      logTruncatedText: 'XR: OpenVR Error! OpenVR failed initialization with error
+        code VRInitError_Init_HmdNotFoundPresenceFailed: "Hmd Not Found Presence Failed
+        (126)"!'
+      logColumnText: 'XR: OpenVR Error! OpenVR failed initialization with error code
+        VRInitError_Init_HmdNotFoundPresenceFailed: "Hmd Not Found Presence Failed
+        (126)"!'
       fileName: 
       className: 
       namespaceName: 
-      lineCount: 2
-      hasSourceCode: 1
-      timeStamp: 0.35333335399627686
-      timeFrame: 3
+      lineCount: 1
+      hasSourceCode: 0
+      timeStamp: 0.019999999552965164
+      timeFrame: 2
       instanceID: 0
       collapsedCount: 0
-      cachedHeight: 33
-      cachedHeightLogWidth: 1314
-      stackEntries:
-      - fileName: Assets/SteamVR/Editor/SteamVR_Settings.cs
-        fileNameWithoutAssets: SteamVR/Editor/SteamVR_Settings.cs
-        fileNameWithoutAssetsPlusLineNumber: SteamVR/Editor/SteamVR_Settings.cs:118
-        fileNameWithoutPath: SteamVR_Settings.cs
-        fileNameWithoutPathPlusLineNumber: SteamVR_Settings.cs:118
-        instanceID: -1
-        className: SteamVR_Settings
-        methodName: Update
-        namespaceName: None
-        lineNumber: 118
-        charNumber: 0
-        stackLabel: SteamVR_Settings.Update()
-        stackLabel2: '    Assets/SteamVR/Editor/SteamVR_Settings.cs:118'
-        stackLabelContent:
-          m_Text: <b>SteamVR_Settings.Update()</b>    Assets/SteamVR/Editor/SteamVR_Settings.cs:118
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        stackLabelWidth: 583
-        stackLabelHeight: 23
-        stackSourceLineHeight: 15
-        sourceCode:
-        - '116:   if (!PlayerSettings.virtualRealitySupported)'
-        - '117:   {'
-        - '118:       PlayerSettings.virtualRealitySupported = true;'
-        - '119:       updated = true;'
-        - '120:   }'
-        showSource: 1
-      - fileName: None
-        fileNameWithoutAssets: None
-        fileNameWithoutAssetsPlusLineNumber: None
-        fileNameWithoutPath: None
-        fileNameWithoutPathPlusLineNumber: None
-        instanceID: -1
-        className: EditorApplication
-        methodName: Internal_CallUpdateFunctions
-        namespaceName: UnityEditor
-        lineNumber: 0
-        charNumber: 0
-        stackLabel: EditorApplication.Internal_CallUpdateFunctions()
-        stackLabel2: 
-        stackLabelContent:
-          m_Text: <b>EditorApplication.Internal_CallUpdateFunctions()</b>
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        stackLabelWidth: 382
-        stackLabelHeight: 23
-        stackSourceLineHeight: 15
-        sourceCode: []
-        showSource: 1
+      cachedHeight: 20
+      cachedHeightLogWidth: 1087
+      stackEntries: []
       ignoredStackEntries: []
       lastMatchedCount: 1
       belongsToFilters:
-      - name: Warning
+      - name: Error
         isEnabled: 1
         collapsed: 1
-        itemGUID: 755fe0eb-bae9-4499-bf12-ca533c2eb313
+        itemGUID: 7151aac7-c58e-4f4f-a40f-735e70fb7e40
         filterName: 
-        mainColor: {r: 1, g: 0.84, b: 0.02, a: 0.7}
+        mainColor: {r: 1, g: 0, b: 0, a: 0.7}
         isStandardFilter: 1
         isTempFilter: 0
-        useAdvancedColors: 0
+        useAdvancedColors: 1
         customTextColor: {r: 1, g: 1, b: 1, a: 1}
-        customBackgroundColor: {r: 1, g: 1, b: 1, a: 1}
+        customBackgroundColor: {r: 1, g: 0, b: 0, a: 0.7}
         swallowStandard: 1
         overrideStandardColors: 1
         overrideStandardIcon: 1
@@ -1460,7 +1820,7 @@ MonoBehaviour:
           - name: 
             isEnabled: 1
             collapsed: 0
-            itemGUID: bf206440-189e-451a-887c-2ed9d503fe58
+            itemGUID: 49a2fda4-1d57-4884-8eda-da4d8bdb81b0
             searchString: <Any>
             searchType: 1
             removeSearchStringFromLog: 0
@@ -1469,13 +1829,13 @@ MonoBehaviour:
               - name: 
                 isEnabled: 1
                 collapsed: 0
-                itemGUID: aa17b178-fe6c-4ed2-956a-06ab2adc3b31
-                logType: 2
+                itemGUID: 6e4c2561-9080-4aea-9c61-4a902d718b2e
+                logType: 3
               - name: 
                 isEnabled: 1
                 collapsed: 0
-                itemGUID: d696edf6-ee27-467b-8fd6-c324d69e72e8
-                logType: 5
+                itemGUID: f7c2acf7-3454-435f-945f-382126f7b7af
+                logType: 6
               selectionList: 0
               collapsable: 1
               collapsed: 0
@@ -1484,7 +1844,7 @@ MonoBehaviour:
               - name: 
                 isEnabled: 1
                 collapsed: 0
-                itemGUID: 7c084ef7-488c-4dd2-a4b8-822da0040e28
+                itemGUID: 2327a22b-4ed6-4113-843a-2db84ae321b1
                 columnType: 1
               selectionList: 0
               collapsable: 1
@@ -1499,14 +1859,14 @@ MonoBehaviour:
           itemGUID: 
           iconType: 3
           iconType2: 1
-          iconText: '!'
+          iconText: X
           useIconTextFirstLetter: 0
           useIconLogColor: 0
           iconColor: {r: 1, g: 1, b: 1, a: 1}
           iconBuiltInID: BACKGROUNDS_ECPBGROUNDEDSQUARE
           iconTextureGUID: 
           useIconShadow: 1
-          iconOffset: {x: 0, y: 2}
+          iconOffset: {x: 0, y: 0}
           iconShadowOffset: {x: 0.5, y: 0.5}
           iconSize: 7
         iconSymbol:
@@ -1537,7 +1897,7 @@ MonoBehaviour:
           useIconTextFirstLetter: 1
           useIconLogColor: 1
           iconColor: {r: 1, g: 1, b: 1, a: 1}
-          iconBuiltInID: BACKGROUNDS_ECPBGTRIANGLE
+          iconBuiltInID: BACKGROUNDS_ECPBGROUNDEDSQUARE
           iconTextureGUID: 
           useIconShadow: 1
           iconOffset: {x: 0, y: 0}
@@ -1564,17 +1924,17 @@ MonoBehaviour:
         hideLabelInToolbar: 0
         hideWhenNoMatches: 0
       belongsToStandardFilters:
-      - name: Warning
+      - name: Error
         isEnabled: 1
         collapsed: 1
-        itemGUID: 755fe0eb-bae9-4499-bf12-ca533c2eb313
+        itemGUID: 7151aac7-c58e-4f4f-a40f-735e70fb7e40
         filterName: 
-        mainColor: {r: 1, g: 0.84, b: 0.02, a: 0.7}
+        mainColor: {r: 1, g: 0, b: 0, a: 0.7}
         isStandardFilter: 1
         isTempFilter: 0
-        useAdvancedColors: 0
+        useAdvancedColors: 1
         customTextColor: {r: 1, g: 1, b: 1, a: 1}
-        customBackgroundColor: {r: 1, g: 1, b: 1, a: 1}
+        customBackgroundColor: {r: 1, g: 0, b: 0, a: 0.7}
         swallowStandard: 1
         overrideStandardColors: 1
         overrideStandardIcon: 1
@@ -1593,7 +1953,7 @@ MonoBehaviour:
           - name: 
             isEnabled: 1
             collapsed: 0
-            itemGUID: bf206440-189e-451a-887c-2ed9d503fe58
+            itemGUID: 49a2fda4-1d57-4884-8eda-da4d8bdb81b0
             searchString: <Any>
             searchType: 1
             removeSearchStringFromLog: 0
@@ -1602,13 +1962,13 @@ MonoBehaviour:
               - name: 
                 isEnabled: 1
                 collapsed: 0
-                itemGUID: aa17b178-fe6c-4ed2-956a-06ab2adc3b31
-                logType: 2
+                itemGUID: 6e4c2561-9080-4aea-9c61-4a902d718b2e
+                logType: 3
               - name: 
                 isEnabled: 1
                 collapsed: 0
-                itemGUID: d696edf6-ee27-467b-8fd6-c324d69e72e8
-                logType: 5
+                itemGUID: f7c2acf7-3454-435f-945f-382126f7b7af
+                logType: 6
               selectionList: 0
               collapsable: 1
               collapsed: 0
@@ -1617,7 +1977,7 @@ MonoBehaviour:
               - name: 
                 isEnabled: 1
                 collapsed: 0
-                itemGUID: 7c084ef7-488c-4dd2-a4b8-822da0040e28
+                itemGUID: 2327a22b-4ed6-4113-843a-2db84ae321b1
                 columnType: 1
               selectionList: 0
               collapsable: 1
@@ -1632,14 +1992,14 @@ MonoBehaviour:
           itemGUID: 
           iconType: 3
           iconType2: 1
-          iconText: '!'
+          iconText: X
           useIconTextFirstLetter: 0
           useIconLogColor: 0
           iconColor: {r: 1, g: 1, b: 1, a: 1}
           iconBuiltInID: BACKGROUNDS_ECPBGROUNDEDSQUARE
           iconTextureGUID: 
           useIconShadow: 1
-          iconOffset: {x: 0, y: 2}
+          iconOffset: {x: 0, y: 0}
           iconShadowOffset: {x: 0.5, y: 0.5}
           iconSize: 7
         iconSymbol:
@@ -1670,7 +2030,923 @@ MonoBehaviour:
           useIconTextFirstLetter: 1
           useIconLogColor: 1
           iconColor: {r: 1, g: 1, b: 1, a: 1}
-          iconBuiltInID: BACKGROUNDS_ECPBGTRIANGLE
+          iconBuiltInID: BACKGROUNDS_ECPBGROUNDEDSQUARE
+          iconTextureGUID: 
+          useIconShadow: 1
+          iconOffset: {x: 0, y: 0}
+          iconShadowOffset: {x: 0.5, y: 0.5}
+          iconSize: 13
+        iconTexture:
+          name: 
+          isEnabled: 1
+          collapsed: 0
+          itemGUID: 
+          iconType: 1
+          iconType2: 1
+          iconText: A
+          useIconTextFirstLetter: 1
+          useIconLogColor: 1
+          iconColor: {r: 1, g: 1, b: 1, a: 1}
+          iconBuiltInID: BACKGROUNDS_ECPBGROUNDEDSQUARE
+          iconTextureGUID: 
+          useIconShadow: 1
+          iconOffset: {x: 0, y: 0}
+          iconShadowOffset: {x: 0.5, y: 0.5}
+          iconSize: 13
+        showInToolbar: 1
+        hideLabelInToolbar: 0
+        hideWhenNoMatches: 0
+      assignedTempFilter:
+        name: 
+        isEnabled: 1
+        collapsed: 0
+        itemGUID: 
+        filterName: 
+        mainColor: {r: 1, g: 1, b: 1, a: 1}
+        isStandardFilter: 0
+        isTempFilter: 0
+        useAdvancedColors: 0
+        customTextColor: {r: 1, g: 1, b: 1, a: 1}
+        customBackgroundColor: {r: 1, g: 1, b: 1, a: 1}
+        swallowStandard: 1
+        overrideStandardColors: 1
+        overrideStandardIcon: 1
+        collapseIconBackground: 0
+        collapseIconSymbol: 0
+        collapseIconLetter: 0
+        collapseIconTexture: 0
+        useIconBackground: 1
+        useIconSymbol: 0
+        useIconLetter: 0
+        useIconTexture: 0
+        filterFormatVersion: -1
+        iconColorize: 0
+        searchList:
+          list: []
+          selectionList: 0
+          collapsable: 1
+          collapsed: 0
+        iconLetter:
+          name: 
+          isEnabled: 1
+          collapsed: 0
+          itemGUID: 
+          iconType: 1
+          iconType2: 1
+          iconText: A
+          useIconTextFirstLetter: 1
+          useIconLogColor: 1
+          iconColor: {r: 1, g: 1, b: 1, a: 1}
+          iconBuiltInID: BACKGROUNDS_ECPBGROUNDEDSQUARE
+          iconTextureGUID: 
+          useIconShadow: 1
+          iconOffset: {x: 0, y: 0}
+          iconShadowOffset: {x: 0.5, y: 0.5}
+          iconSize: 13
+        iconSymbol:
+          name: 
+          isEnabled: 1
+          collapsed: 0
+          itemGUID: 
+          iconType: 1
+          iconType2: 1
+          iconText: A
+          useIconTextFirstLetter: 1
+          useIconLogColor: 1
+          iconColor: {r: 1, g: 1, b: 1, a: 1}
+          iconBuiltInID: BACKGROUNDS_ECPBGROUNDEDSQUARE
+          iconTextureGUID: 
+          useIconShadow: 1
+          iconOffset: {x: 0, y: 0}
+          iconShadowOffset: {x: 0.5, y: 0.5}
+          iconSize: 13
+        iconBackground:
+          name: 
+          isEnabled: 1
+          collapsed: 0
+          itemGUID: 
+          iconType: 1
+          iconType2: 1
+          iconText: A
+          useIconTextFirstLetter: 1
+          useIconLogColor: 1
+          iconColor: {r: 1, g: 1, b: 1, a: 1}
+          iconBuiltInID: BACKGROUNDS_ECPBGROUNDEDSQUARE
+          iconTextureGUID: 
+          useIconShadow: 1
+          iconOffset: {x: 0, y: 0}
+          iconShadowOffset: {x: 0.5, y: 0.5}
+          iconSize: 13
+        iconTexture:
+          name: 
+          isEnabled: 1
+          collapsed: 0
+          itemGUID: 
+          iconType: 1
+          iconType2: 1
+          iconText: A
+          useIconTextFirstLetter: 1
+          useIconLogColor: 1
+          iconColor: {r: 1, g: 1, b: 1, a: 1}
+          iconBuiltInID: BACKGROUNDS_ECPBGROUNDEDSQUARE
+          iconTextureGUID: 
+          useIconShadow: 1
+          iconOffset: {x: 0, y: 0}
+          iconShadowOffset: {x: 0.5, y: 0.5}
+          iconSize: 13
+        showInToolbar: 1
+        hideLabelInToolbar: 0
+        hideWhenNoMatches: 0
+    - logType: 1
+      logPanelVisible: 1
+      logPanelIndex: 1
+      logOutputHeight: 16
+      listIndex: 1
+      nativeIndex: 1
+      nativeIdentifier: 0
+      originalLog: OpenVR initialization failed.  Ensure 'Virtual Reality Supported'
+        is checked in Player Settings, and OpenVR is added to the list of Virtual
+        Reality SDKs.
+      originalStackTrace: 'OpenVR initialization failed.  Ensure ''Virtual Reality
+        Supported'' is checked in Player Settings, and OpenVR is added to the list
+        of Virtual Reality SDKs.
+
+        UnityEngine.Debug:Log(Object)
+
+        SteamVR:CreateInstance() (at Assets/SteamVR/Scripts/SteamVR.cs:71)
+
+        SteamVR:get_instance() (at Assets/SteamVR/Scripts/SteamVR.cs:48)
+
+        SteamVR_Render:OnEnable() (at Assets/SteamVR/Scripts/SteamVR_Render.cs:287)
+
+'
+      nativeFileName: Assets/SteamVR/Scripts/SteamVR.cs
+      nativeLineNumber: 71
+      watchName: 
+      logText: OpenVR initialization failed.  Ensure 'Virtual Reality Supported' is
+        checked in Player Settings, and OpenVR is added to the list of Virtual Reality
+        SDKs.
+      logTruncatedText: OpenVR initialization failed.  Ensure 'Virtual Reality Supported'
+        is checked in Player Settings, and OpenVR is added to the list of Virtual
+        Reality SDKs.
+      logColumnText: OpenVR initialization failed.  Ensure 'Virtual Reality Supported'
+        is checked in Player Settings, and OpenVR is added to the list of Virtual
+        Reality SDKs.
+      fileName: 
+      className: 
+      namespaceName: 
+      lineCount: 1
+      hasSourceCode: 0
+      timeStamp: 0.019999999552965164
+      timeFrame: 2
+      instanceID: 0
+      collapsedCount: 0
+      cachedHeight: 20
+      cachedHeightLogWidth: 1087
+      stackEntries:
+      - fileName: Assets/SteamVR/Scripts/SteamVR.cs
+        fileNameWithoutAssets: SteamVR/Scripts/SteamVR.cs
+        fileNameWithoutAssetsPlusLineNumber: SteamVR/Scripts/SteamVR.cs:71
+        fileNameWithoutPath: SteamVR.cs
+        fileNameWithoutPathPlusLineNumber: SteamVR.cs:71
+        instanceID: -1
+        className: SteamVR
+        methodName: CreateInstance
+        namespaceName: None
+        lineNumber: 71
+        charNumber: 0
+        stackLabel: SteamVR.CreateInstance()
+        stackLabel2: '    Assets/SteamVR/Scripts/SteamVR.cs:71'
+        stackLabelContent:
+          m_Text: <b>SteamVR.CreateInstance()</b>    Assets/SteamVR/Scripts/SteamVR.cs:71
+          m_Image: {fileID: 0}
+          m_Tooltip: 
+        stackLabelWidth: 513
+        stackLabelHeight: 23
+        stackSourceLineHeight: 15
+        sourceCode: []
+        showSource: 1
+      - fileName: Assets/SteamVR/Scripts/SteamVR.cs
+        fileNameWithoutAssets: SteamVR/Scripts/SteamVR.cs
+        fileNameWithoutAssetsPlusLineNumber: SteamVR/Scripts/SteamVR.cs:48
+        fileNameWithoutPath: SteamVR.cs
+        fileNameWithoutPathPlusLineNumber: SteamVR.cs:48
+        instanceID: -1
+        className: SteamVR
+        methodName: get_instance
+        namespaceName: None
+        lineNumber: 48
+        charNumber: 0
+        stackLabel: SteamVR.get_instance()
+        stackLabel2: '    Assets/SteamVR/Scripts/SteamVR.cs:48'
+        stackLabelContent:
+          m_Text: <b>SteamVR.get_instance()</b>    Assets/SteamVR/Scripts/SteamVR.cs:48
+          m_Image: {fileID: 0}
+          m_Tooltip: 
+        stackLabelWidth: 497
+        stackLabelHeight: 23
+        stackSourceLineHeight: 15
+        sourceCode: []
+        showSource: 1
+      - fileName: Assets/SteamVR/Scripts/SteamVR_Render.cs
+        fileNameWithoutAssets: SteamVR/Scripts/SteamVR_Render.cs
+        fileNameWithoutAssetsPlusLineNumber: SteamVR/Scripts/SteamVR_Render.cs:287
+        fileNameWithoutPath: SteamVR_Render.cs
+        fileNameWithoutPathPlusLineNumber: SteamVR_Render.cs:287
+        instanceID: -1
+        className: SteamVR_Render
+        methodName: OnEnable
+        namespaceName: None
+        lineNumber: 287
+        charNumber: 0
+        stackLabel: SteamVR_Render.OnEnable()
+        stackLabel2: '    Assets/SteamVR/Scripts/SteamVR_Render.cs:287'
+        stackLabelContent:
+          m_Text: <b>SteamVR_Render.OnEnable()</b>    Assets/SteamVR/Scripts/SteamVR_Render.cs:287
+          m_Image: {fileID: 0}
+          m_Tooltip: 
+        stackLabelWidth: 590
+        stackLabelHeight: 23
+        stackSourceLineHeight: 15
+        sourceCode: []
+        showSource: 1
+      ignoredStackEntries: []
+      lastMatchedCount: 1
+      belongsToFilters:
+      - name: Log
+        isEnabled: 1
+        collapsed: 1
+        itemGUID: d3a92ee9-95fa-4e71-a3ea-b75f5b4039ae
+        filterName: 
+        mainColor: {r: 1, g: 1, b: 1, a: 1}
+        isStandardFilter: 1
+        isTempFilter: 0
+        useAdvancedColors: 0
+        customTextColor: {r: 1, g: 1, b: 1, a: 1}
+        customBackgroundColor: {r: 1, g: 1, b: 1, a: 1}
+        swallowStandard: 1
+        overrideStandardColors: 1
+        overrideStandardIcon: 1
+        collapseIconBackground: 0
+        collapseIconSymbol: 0
+        collapseIconLetter: 0
+        collapseIconTexture: 0
+        useIconBackground: 1
+        useIconSymbol: 0
+        useIconLetter: 0
+        useIconTexture: 0
+        filterFormatVersion: 1
+        iconColorize: 0
+        searchList:
+          list:
+          - name: 
+            isEnabled: 1
+            collapsed: 0
+            itemGUID: 19daf486-7509-4b03-9cc5-cd2f426a0c94
+            searchString: <Any>
+            searchType: 1
+            removeSearchStringFromLog: 0
+            logTypeList:
+              list:
+              - name: 
+                isEnabled: 1
+                collapsed: 0
+                itemGUID: 67379872-0cd3-4636-921e-b724ab3f8a5f
+                logType: 1
+              selectionList: 0
+              collapsable: 1
+              collapsed: 0
+            columnTypeList:
+              list:
+              - name: 
+                isEnabled: 1
+                collapsed: 0
+                itemGUID: 2981006d-cdde-4920-a940-4917f65a54ae
+                columnType: 1
+              selectionList: 0
+              collapsable: 1
+              collapsed: 0
+          selectionList: 0
+          collapsable: 1
+          collapsed: 0
+        iconLetter:
+          name: 
+          isEnabled: 1
+          collapsed: 0
+          itemGUID: 
+          iconType: 1
+          iconType2: 1
+          iconText: A
+          useIconTextFirstLetter: 1
+          useIconLogColor: 1
+          iconColor: {r: 1, g: 1, b: 1, a: 1}
+          iconBuiltInID: BACKGROUNDS_ECPBGROUNDEDSQUARE
+          iconTextureGUID: 
+          useIconShadow: 1
+          iconOffset: {x: 0, y: 0}
+          iconShadowOffset: {x: 0.5, y: 0.5}
+          iconSize: 13
+        iconSymbol:
+          name: 
+          isEnabled: 1
+          collapsed: 0
+          itemGUID: 
+          iconType: 1
+          iconType2: 1
+          iconText: A
+          useIconTextFirstLetter: 1
+          useIconLogColor: 1
+          iconColor: {r: 1, g: 1, b: 1, a: 1}
+          iconBuiltInID: BACKGROUNDS_ECPBGROUNDEDSQUARE
+          iconTextureGUID: 
+          useIconShadow: 1
+          iconOffset: {x: 0, y: 0}
+          iconShadowOffset: {x: 0.5, y: 0.5}
+          iconSize: 13
+        iconBackground:
+          name: 
+          isEnabled: 1
+          collapsed: 0
+          itemGUID: 
+          iconType: 1
+          iconType2: 1
+          iconText: A
+          useIconTextFirstLetter: 1
+          useIconLogColor: 1
+          iconColor: {r: 1, g: 1, b: 1, a: 1}
+          iconBuiltInID: BACKGROUNDS_ECPLOGICON
+          iconTextureGUID: 
+          useIconShadow: 1
+          iconOffset: {x: 0, y: 0}
+          iconShadowOffset: {x: 0.5, y: 0.5}
+          iconSize: 13
+        iconTexture:
+          name: 
+          isEnabled: 1
+          collapsed: 0
+          itemGUID: 
+          iconType: 1
+          iconType2: 1
+          iconText: A
+          useIconTextFirstLetter: 1
+          useIconLogColor: 1
+          iconColor: {r: 1, g: 1, b: 1, a: 1}
+          iconBuiltInID: BACKGROUNDS_ECPBGROUNDEDSQUARE
+          iconTextureGUID: 
+          useIconShadow: 1
+          iconOffset: {x: 0, y: 0}
+          iconShadowOffset: {x: 0.5, y: 0.5}
+          iconSize: 13
+        showInToolbar: 1
+        hideLabelInToolbar: 0
+        hideWhenNoMatches: 0
+      belongsToStandardFilters:
+      - name: Log
+        isEnabled: 1
+        collapsed: 1
+        itemGUID: d3a92ee9-95fa-4e71-a3ea-b75f5b4039ae
+        filterName: 
+        mainColor: {r: 1, g: 1, b: 1, a: 1}
+        isStandardFilter: 1
+        isTempFilter: 0
+        useAdvancedColors: 0
+        customTextColor: {r: 1, g: 1, b: 1, a: 1}
+        customBackgroundColor: {r: 1, g: 1, b: 1, a: 1}
+        swallowStandard: 1
+        overrideStandardColors: 1
+        overrideStandardIcon: 1
+        collapseIconBackground: 0
+        collapseIconSymbol: 0
+        collapseIconLetter: 0
+        collapseIconTexture: 0
+        useIconBackground: 1
+        useIconSymbol: 0
+        useIconLetter: 0
+        useIconTexture: 0
+        filterFormatVersion: 1
+        iconColorize: 0
+        searchList:
+          list:
+          - name: 
+            isEnabled: 1
+            collapsed: 0
+            itemGUID: 19daf486-7509-4b03-9cc5-cd2f426a0c94
+            searchString: <Any>
+            searchType: 1
+            removeSearchStringFromLog: 0
+            logTypeList:
+              list:
+              - name: 
+                isEnabled: 1
+                collapsed: 0
+                itemGUID: 67379872-0cd3-4636-921e-b724ab3f8a5f
+                logType: 1
+              selectionList: 0
+              collapsable: 1
+              collapsed: 0
+            columnTypeList:
+              list:
+              - name: 
+                isEnabled: 1
+                collapsed: 0
+                itemGUID: 2981006d-cdde-4920-a940-4917f65a54ae
+                columnType: 1
+              selectionList: 0
+              collapsable: 1
+              collapsed: 0
+          selectionList: 0
+          collapsable: 1
+          collapsed: 0
+        iconLetter:
+          name: 
+          isEnabled: 1
+          collapsed: 0
+          itemGUID: 
+          iconType: 1
+          iconType2: 1
+          iconText: A
+          useIconTextFirstLetter: 1
+          useIconLogColor: 1
+          iconColor: {r: 1, g: 1, b: 1, a: 1}
+          iconBuiltInID: BACKGROUNDS_ECPBGROUNDEDSQUARE
+          iconTextureGUID: 
+          useIconShadow: 1
+          iconOffset: {x: 0, y: 0}
+          iconShadowOffset: {x: 0.5, y: 0.5}
+          iconSize: 13
+        iconSymbol:
+          name: 
+          isEnabled: 1
+          collapsed: 0
+          itemGUID: 
+          iconType: 1
+          iconType2: 1
+          iconText: A
+          useIconTextFirstLetter: 1
+          useIconLogColor: 1
+          iconColor: {r: 1, g: 1, b: 1, a: 1}
+          iconBuiltInID: BACKGROUNDS_ECPBGROUNDEDSQUARE
+          iconTextureGUID: 
+          useIconShadow: 1
+          iconOffset: {x: 0, y: 0}
+          iconShadowOffset: {x: 0.5, y: 0.5}
+          iconSize: 13
+        iconBackground:
+          name: 
+          isEnabled: 1
+          collapsed: 0
+          itemGUID: 
+          iconType: 1
+          iconType2: 1
+          iconText: A
+          useIconTextFirstLetter: 1
+          useIconLogColor: 1
+          iconColor: {r: 1, g: 1, b: 1, a: 1}
+          iconBuiltInID: BACKGROUNDS_ECPLOGICON
+          iconTextureGUID: 
+          useIconShadow: 1
+          iconOffset: {x: 0, y: 0}
+          iconShadowOffset: {x: 0.5, y: 0.5}
+          iconSize: 13
+        iconTexture:
+          name: 
+          isEnabled: 1
+          collapsed: 0
+          itemGUID: 
+          iconType: 1
+          iconType2: 1
+          iconText: A
+          useIconTextFirstLetter: 1
+          useIconLogColor: 1
+          iconColor: {r: 1, g: 1, b: 1, a: 1}
+          iconBuiltInID: BACKGROUNDS_ECPBGROUNDEDSQUARE
+          iconTextureGUID: 
+          useIconShadow: 1
+          iconOffset: {x: 0, y: 0}
+          iconShadowOffset: {x: 0.5, y: 0.5}
+          iconSize: 13
+        showInToolbar: 1
+        hideLabelInToolbar: 0
+        hideWhenNoMatches: 0
+      assignedTempFilter:
+        name: 
+        isEnabled: 1
+        collapsed: 0
+        itemGUID: 
+        filterName: 
+        mainColor: {r: 1, g: 1, b: 1, a: 1}
+        isStandardFilter: 0
+        isTempFilter: 0
+        useAdvancedColors: 0
+        customTextColor: {r: 1, g: 1, b: 1, a: 1}
+        customBackgroundColor: {r: 1, g: 1, b: 1, a: 1}
+        swallowStandard: 1
+        overrideStandardColors: 1
+        overrideStandardIcon: 1
+        collapseIconBackground: 0
+        collapseIconSymbol: 0
+        collapseIconLetter: 0
+        collapseIconTexture: 0
+        useIconBackground: 1
+        useIconSymbol: 0
+        useIconLetter: 0
+        useIconTexture: 0
+        filterFormatVersion: -1
+        iconColorize: 0
+        searchList:
+          list: []
+          selectionList: 0
+          collapsable: 1
+          collapsed: 0
+        iconLetter:
+          name: 
+          isEnabled: 1
+          collapsed: 0
+          itemGUID: 
+          iconType: 1
+          iconType2: 1
+          iconText: A
+          useIconTextFirstLetter: 1
+          useIconLogColor: 1
+          iconColor: {r: 1, g: 1, b: 1, a: 1}
+          iconBuiltInID: BACKGROUNDS_ECPBGROUNDEDSQUARE
+          iconTextureGUID: 
+          useIconShadow: 1
+          iconOffset: {x: 0, y: 0}
+          iconShadowOffset: {x: 0.5, y: 0.5}
+          iconSize: 13
+        iconSymbol:
+          name: 
+          isEnabled: 1
+          collapsed: 0
+          itemGUID: 
+          iconType: 1
+          iconType2: 1
+          iconText: A
+          useIconTextFirstLetter: 1
+          useIconLogColor: 1
+          iconColor: {r: 1, g: 1, b: 1, a: 1}
+          iconBuiltInID: BACKGROUNDS_ECPBGROUNDEDSQUARE
+          iconTextureGUID: 
+          useIconShadow: 1
+          iconOffset: {x: 0, y: 0}
+          iconShadowOffset: {x: 0.5, y: 0.5}
+          iconSize: 13
+        iconBackground:
+          name: 
+          isEnabled: 1
+          collapsed: 0
+          itemGUID: 
+          iconType: 1
+          iconType2: 1
+          iconText: A
+          useIconTextFirstLetter: 1
+          useIconLogColor: 1
+          iconColor: {r: 1, g: 1, b: 1, a: 1}
+          iconBuiltInID: BACKGROUNDS_ECPBGROUNDEDSQUARE
+          iconTextureGUID: 
+          useIconShadow: 1
+          iconOffset: {x: 0, y: 0}
+          iconShadowOffset: {x: 0.5, y: 0.5}
+          iconSize: 13
+        iconTexture:
+          name: 
+          isEnabled: 1
+          collapsed: 0
+          itemGUID: 
+          iconType: 1
+          iconType2: 1
+          iconText: A
+          useIconTextFirstLetter: 1
+          useIconLogColor: 1
+          iconColor: {r: 1, g: 1, b: 1, a: 1}
+          iconBuiltInID: BACKGROUNDS_ECPBGROUNDEDSQUARE
+          iconTextureGUID: 
+          useIconShadow: 1
+          iconOffset: {x: 0, y: 0}
+          iconShadowOffset: {x: 0.5, y: 0.5}
+          iconSize: 13
+        showInToolbar: 1
+        hideLabelInToolbar: 0
+        hideWhenNoMatches: 0
+    - logType: 1
+      logPanelVisible: 1
+      logPanelIndex: 2
+      logOutputHeight: 16
+      listIndex: 2
+      nativeIndex: 2
+      nativeIdentifier: 0
+      originalLog: Search
+      originalStackTrace: 'Search
+
+        UnityEngine.Debug:Log(Object)
+
+        Recognition:KeywordRecognizerOnPhraseRecognized(PhraseRecognizedEventArgs)
+        (at Assets/_Scripts/Speech/Recognition.cs:80)
+
+        UnityEngine.Windows.Speech.PhraseRecognizer:InvokePhraseRecognizedEvent(String,
+        ConfidenceLevel, SemanticMeaning[], Int64, Int64)
+
+'
+      nativeFileName: Assets/_Scripts/Speech/Recognition.cs
+      nativeLineNumber: 80
+      watchName: 
+      logText: Search
+      logTruncatedText: Search
+      logColumnText: Search
+      fileName: 
+      className: 
+      namespaceName: 
+      lineCount: 1
+      hasSourceCode: 1
+      timeStamp: 2.2999489307403564
+      timeFrame: 301
+      instanceID: 0
+      collapsedCount: 0
+      cachedHeight: 20
+      cachedHeightLogWidth: 1087
+      stackEntries:
+      - fileName: Assets/_Scripts/Speech/Recognition.cs
+        fileNameWithoutAssets: _Scripts/Speech/Recognition.cs
+        fileNameWithoutAssetsPlusLineNumber: _Scripts/Speech/Recognition.cs:80
+        fileNameWithoutPath: Recognition.cs
+        fileNameWithoutPathPlusLineNumber: Recognition.cs:80
+        instanceID: -1
+        className: Recognition
+        methodName: KeywordRecognizerOnPhraseRecognized
+        namespaceName: None
+        lineNumber: 80
+        charNumber: 0
+        stackLabel: Recognition.KeywordRecognizerOnPhraseRecognized()
+        stackLabel2: '    Assets/_Scripts/Speech/Recognition.cs:80'
+        stackLabelContent:
+          m_Text: <b>Recognition.KeywordRecognizerOnPhraseRecognized()</b>    Assets/_Scripts/Speech/Recognition.cs:80
+          m_Image: {fileID: 0}
+          m_Tooltip: 
+        stackLabelWidth: 713
+        stackLabelHeight: 23
+        stackSourceLineHeight: 15
+        sourceCode:
+        - '78:   {'
+        - '79:       keywordAction.Invoke();'
+        - '80:       Debug.Log(args.text);'
+        - '81:   }'
+        showSource: 1
+      - fileName: None
+        fileNameWithoutAssets: None
+        fileNameWithoutAssetsPlusLineNumber: None
+        fileNameWithoutPath: None
+        fileNameWithoutPathPlusLineNumber: None
+        instanceID: -1
+        className: PhraseRecognizer
+        methodName: InvokePhraseRecognizedEvent
+        namespaceName: UnityEngine.Windows.Speech
+        lineNumber: 0
+        charNumber: 0
+        stackLabel: PhraseRecognizer.InvokePhraseRecognizedEvent()
+        stackLabel2: 
+        stackLabelContent:
+          m_Text: <b>PhraseRecognizer.InvokePhraseRecognizedEvent()</b>
+          m_Image: {fileID: 0}
+          m_Tooltip: 
+        stackLabelWidth: 395
+        stackLabelHeight: 23
+        stackSourceLineHeight: 15
+        sourceCode: []
+        showSource: 1
+      ignoredStackEntries: []
+      lastMatchedCount: 1
+      belongsToFilters:
+      - name: Log
+        isEnabled: 1
+        collapsed: 1
+        itemGUID: d3a92ee9-95fa-4e71-a3ea-b75f5b4039ae
+        filterName: 
+        mainColor: {r: 1, g: 1, b: 1, a: 1}
+        isStandardFilter: 1
+        isTempFilter: 0
+        useAdvancedColors: 0
+        customTextColor: {r: 1, g: 1, b: 1, a: 1}
+        customBackgroundColor: {r: 1, g: 1, b: 1, a: 1}
+        swallowStandard: 1
+        overrideStandardColors: 1
+        overrideStandardIcon: 1
+        collapseIconBackground: 0
+        collapseIconSymbol: 0
+        collapseIconLetter: 0
+        collapseIconTexture: 0
+        useIconBackground: 1
+        useIconSymbol: 0
+        useIconLetter: 0
+        useIconTexture: 0
+        filterFormatVersion: 1
+        iconColorize: 0
+        searchList:
+          list:
+          - name: 
+            isEnabled: 1
+            collapsed: 0
+            itemGUID: 19daf486-7509-4b03-9cc5-cd2f426a0c94
+            searchString: <Any>
+            searchType: 1
+            removeSearchStringFromLog: 0
+            logTypeList:
+              list:
+              - name: 
+                isEnabled: 1
+                collapsed: 0
+                itemGUID: 67379872-0cd3-4636-921e-b724ab3f8a5f
+                logType: 1
+              selectionList: 0
+              collapsable: 1
+              collapsed: 0
+            columnTypeList:
+              list:
+              - name: 
+                isEnabled: 1
+                collapsed: 0
+                itemGUID: 2981006d-cdde-4920-a940-4917f65a54ae
+                columnType: 1
+              selectionList: 0
+              collapsable: 1
+              collapsed: 0
+          selectionList: 0
+          collapsable: 1
+          collapsed: 0
+        iconLetter:
+          name: 
+          isEnabled: 1
+          collapsed: 0
+          itemGUID: 
+          iconType: 1
+          iconType2: 1
+          iconText: A
+          useIconTextFirstLetter: 1
+          useIconLogColor: 1
+          iconColor: {r: 1, g: 1, b: 1, a: 1}
+          iconBuiltInID: BACKGROUNDS_ECPBGROUNDEDSQUARE
+          iconTextureGUID: 
+          useIconShadow: 1
+          iconOffset: {x: 0, y: 0}
+          iconShadowOffset: {x: 0.5, y: 0.5}
+          iconSize: 13
+        iconSymbol:
+          name: 
+          isEnabled: 1
+          collapsed: 0
+          itemGUID: 
+          iconType: 1
+          iconType2: 1
+          iconText: A
+          useIconTextFirstLetter: 1
+          useIconLogColor: 1
+          iconColor: {r: 1, g: 1, b: 1, a: 1}
+          iconBuiltInID: BACKGROUNDS_ECPBGROUNDEDSQUARE
+          iconTextureGUID: 
+          useIconShadow: 1
+          iconOffset: {x: 0, y: 0}
+          iconShadowOffset: {x: 0.5, y: 0.5}
+          iconSize: 13
+        iconBackground:
+          name: 
+          isEnabled: 1
+          collapsed: 0
+          itemGUID: 
+          iconType: 1
+          iconType2: 1
+          iconText: A
+          useIconTextFirstLetter: 1
+          useIconLogColor: 1
+          iconColor: {r: 1, g: 1, b: 1, a: 1}
+          iconBuiltInID: BACKGROUNDS_ECPLOGICON
+          iconTextureGUID: 
+          useIconShadow: 1
+          iconOffset: {x: 0, y: 0}
+          iconShadowOffset: {x: 0.5, y: 0.5}
+          iconSize: 13
+        iconTexture:
+          name: 
+          isEnabled: 1
+          collapsed: 0
+          itemGUID: 
+          iconType: 1
+          iconType2: 1
+          iconText: A
+          useIconTextFirstLetter: 1
+          useIconLogColor: 1
+          iconColor: {r: 1, g: 1, b: 1, a: 1}
+          iconBuiltInID: BACKGROUNDS_ECPBGROUNDEDSQUARE
+          iconTextureGUID: 
+          useIconShadow: 1
+          iconOffset: {x: 0, y: 0}
+          iconShadowOffset: {x: 0.5, y: 0.5}
+          iconSize: 13
+        showInToolbar: 1
+        hideLabelInToolbar: 0
+        hideWhenNoMatches: 0
+      belongsToStandardFilters:
+      - name: Log
+        isEnabled: 1
+        collapsed: 1
+        itemGUID: d3a92ee9-95fa-4e71-a3ea-b75f5b4039ae
+        filterName: 
+        mainColor: {r: 1, g: 1, b: 1, a: 1}
+        isStandardFilter: 1
+        isTempFilter: 0
+        useAdvancedColors: 0
+        customTextColor: {r: 1, g: 1, b: 1, a: 1}
+        customBackgroundColor: {r: 1, g: 1, b: 1, a: 1}
+        swallowStandard: 1
+        overrideStandardColors: 1
+        overrideStandardIcon: 1
+        collapseIconBackground: 0
+        collapseIconSymbol: 0
+        collapseIconLetter: 0
+        collapseIconTexture: 0
+        useIconBackground: 1
+        useIconSymbol: 0
+        useIconLetter: 0
+        useIconTexture: 0
+        filterFormatVersion: 1
+        iconColorize: 0
+        searchList:
+          list:
+          - name: 
+            isEnabled: 1
+            collapsed: 0
+            itemGUID: 19daf486-7509-4b03-9cc5-cd2f426a0c94
+            searchString: <Any>
+            searchType: 1
+            removeSearchStringFromLog: 0
+            logTypeList:
+              list:
+              - name: 
+                isEnabled: 1
+                collapsed: 0
+                itemGUID: 67379872-0cd3-4636-921e-b724ab3f8a5f
+                logType: 1
+              selectionList: 0
+              collapsable: 1
+              collapsed: 0
+            columnTypeList:
+              list:
+              - name: 
+                isEnabled: 1
+                collapsed: 0
+                itemGUID: 2981006d-cdde-4920-a940-4917f65a54ae
+                columnType: 1
+              selectionList: 0
+              collapsable: 1
+              collapsed: 0
+          selectionList: 0
+          collapsable: 1
+          collapsed: 0
+        iconLetter:
+          name: 
+          isEnabled: 1
+          collapsed: 0
+          itemGUID: 
+          iconType: 1
+          iconType2: 1
+          iconText: A
+          useIconTextFirstLetter: 1
+          useIconLogColor: 1
+          iconColor: {r: 1, g: 1, b: 1, a: 1}
+          iconBuiltInID: BACKGROUNDS_ECPBGROUNDEDSQUARE
+          iconTextureGUID: 
+          useIconShadow: 1
+          iconOffset: {x: 0, y: 0}
+          iconShadowOffset: {x: 0.5, y: 0.5}
+          iconSize: 13
+        iconSymbol:
+          name: 
+          isEnabled: 1
+          collapsed: 0
+          itemGUID: 
+          iconType: 1
+          iconType2: 1
+          iconText: A
+          useIconTextFirstLetter: 1
+          useIconLogColor: 1
+          iconColor: {r: 1, g: 1, b: 1, a: 1}
+          iconBuiltInID: BACKGROUNDS_ECPBGROUNDEDSQUARE
+          iconTextureGUID: 
+          useIconShadow: 1
+          iconOffset: {x: 0, y: 0}
+          iconShadowOffset: {x: 0.5, y: 0.5}
+          iconSize: 13
+        iconBackground:
+          name: 
+          isEnabled: 1
+          collapsed: 0
+          itemGUID: 
+          iconType: 1
+          iconType2: 1
+          iconText: A
+          useIconTextFirstLetter: 1
+          useIconLogColor: 1
+          iconColor: {r: 1, g: 1, b: 1, a: 1}
+          iconBuiltInID: BACKGROUNDS_ECPLOGICON
           iconTextureGUID: 
           useIconShadow: 1
           iconOffset: {x: 0, y: 0}
@@ -1813,28 +3089,28 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Game
-    m_Image: {fileID: -2087823869225018852, guid: 0000000000000000d000000000000000,
+    m_Image: {fileID: -6423792434712278376, guid: 0000000000000000d000000000000000,
       type: 0}
     m_Tooltip: 
   m_DepthBufferBits: 32
   m_Pos:
     serializedVersion: 2
-    x: 245
-    y: 92
-    width: 1113
-    height: 554
+    x: -1396
+    y: 188
+    width: 927
+    height: 452
   m_MaximizeOnPlay: 0
   m_Gizmos: 1
   m_Stats: 1
-  m_SelectedSizes: 0600000000000000000000000f000000000000000000000000000000000000000000000000000000
+  m_SelectedSizes: 0700000000000000000000000f000000000000000000000000000000000000000000000000000000
   m_TargetDisplay: 0
   m_ZoomArea:
     m_HRangeLocked: 0
     m_VRangeLocked: 0
-    m_HBaseRangeMin: -512
-    m_HBaseRangeMax: 512
-    m_VBaseRangeMin: -384
-    m_VBaseRangeMax: 384
+    m_HBaseRangeMin: -463.5
+    m_HBaseRangeMax: 463.5
+    m_VBaseRangeMin: -217.5
+    m_VBaseRangeMax: 217.5
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -1851,25 +3127,25 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 17
-      width: 1113
-      height: 537
-    m_Scale: {x: 0.69921875, y: 0.69921875}
-    m_Translation: {x: 556.5, y: 268.5}
+      width: 927
+      height: 435
+    m_Scale: {x: 1, y: 1}
+    m_Translation: {x: 463.5, y: 217.5}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -795.88824
-      y: -384
-      width: 1591.7765
-      height: 768
+      x: -463.5
+      y: -217.5
+      width: 927
+      height: 435
     m_MinimalGUI: 1
-  m_defaultScale: 0.69921875
+  m_defaultScale: 1
   m_TargetTexture: {fileID: 0}
   m_CurrentColorSpace: 1
-  m_LastWindowPixelSize: {x: 1113, y: 554}
+  m_LastWindowPixelSize: {x: 927, y: 452}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000100000100
@@ -1889,35 +3165,35 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Hierarchy
-    m_Image: {fileID: -590624980919486359, guid: 0000000000000000d000000000000000,
+    m_Image: {fileID: 7966133145522015247, guid: 0000000000000000d000000000000000,
       type: 0}
     m_Tooltip: 
   m_DepthBufferBits: 0
   m_Pos:
     serializedVersion: 2
-    x: 0
-    y: 92
-    width: 241
-    height: 554
+    x: -1600
+    y: 188
+    width: 200
+    height: 452
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 5c010000
-    m_LastClickedID: 0
-    m_ExpandedIDs: d4e9ffffa2fbffffa4fbffffa6fbffff00000000fa2d0000
+    m_SelectedIDs: 502e0000
+    m_LastClickedID: 11856
+    m_ExpandedIDs: d2f0f5ff4c3df9ff6c39faff8472faff9801fbffc6b0feffa4fbffffa6fbffff00000000282e00003e2e0000422e0000502e0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: Test
+      m_OriginalName: Test
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: -659246
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 0
       m_ClientGUIView: {fileID: 15}
     m_SearchString: 
@@ -1942,25 +3218,25 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Scene
-    m_Image: {fileID: 2318424515335265636, guid: 0000000000000000d000000000000000,
+    m_Image: {fileID: 2593428753322112591, guid: 0000000000000000d000000000000000,
       type: 0}
     m_Tooltip: 
   m_DepthBufferBits: 32
   m_Pos:
     serializedVersion: 2
-    x: 245
-    y: 92
-    width: 1113
-    height: 554
+    x: -1396
+    y: 188
+    width: 927
+    height: 452
   m_SceneLighting: 1
-  lastFramingTime: 1713.2493788901013
-  m_2DMode: 0
+  lastFramingTime: 12778.553613593696
+  m_2DMode: 1
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 12.145239, y: 8.832697, z: 10.112723}
+    m_Target: {x: 374.20688, y: 380.3302, z: 11.770675}
     speed: 2
-    m_Value: {x: 12.145239, y: 8.832697, z: 10.112723}
+    m_Value: {x: 374.20688, y: 380.3302, z: 11.770675}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -1975,27 +3251,27 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
     yGrid:
-      m_Target: 1
-      speed: 2
-      m_Value: 1
-    zGrid:
       m_Target: 0
       speed: 2
       m_Value: 0
+    zGrid:
+      m_Target: 1
+      speed: 2
+      m_Value: 1
   m_Rotation:
-    m_Target: {x: -0.1221189, y: 0.71027666, z: -0.12728216, w: -0.681464}
+    m_Target: {x: 0, y: 0, z: 0, w: 1}
     speed: 2
-    m_Value: {x: -0.122118905, y: 0.7102767, z: -0.12728217, w: -0.6814641}
+    m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 4.0416584
+    m_Target: 1051.488
     speed: 2
-    m_Value: 4.0416584
+    m_Value: 1051.488
   m_Ortho:
-    m_Target: 0
+    m_Target: 1
     speed: 2
-    m_Value: 0
+    m_Value: 1
   m_ShowGlobalGrid: 1
-  m_LastSceneViewRotation: {x: -0.15060511, y: 0.35787022, z: -0.05860447, w: -0.9196807}
+  m_LastSceneViewRotation: {x: 0.10863221, y: -0.89119345, z: 0.32059956, w: 0.30197576}
   m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 
@@ -2017,16 +3293,16 @@ MonoBehaviour:
   m_MaxSize: {x: 2048, y: 2048}
   m_TitleContent:
     m_Text: Asset Store
-    m_Image: {fileID: 357073275683767465, guid: 0000000000000000d000000000000000,
+    m_Image: {fileID: -8693916549880196297, guid: 0000000000000000d000000000000000,
       type: 0}
     m_Tooltip: 
   m_DepthBufferBits: 0
   m_Pos:
     serializedVersion: 2
-    x: 245
-    y: 92
-    width: 1113
-    height: 560
+    x: -1396
+    y: 188
+    width: 927
+    height: 451
 --- !u!114 &23
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -2043,16 +3319,16 @@ MonoBehaviour:
   m_MaxSize: {x: 10000, y: 10000}
   m_TitleContent:
     m_Text: Project
-    m_Image: {fileID: -7501376956915960154, guid: 0000000000000000d000000000000000,
+    m_Image: {fileID: -5467254957812901981, guid: 0000000000000000d000000000000000,
       type: 0}
     m_Tooltip: 
   m_DepthBufferBits: 0
   m_Pos:
     serializedVersion: 2
-    x: 8
-    y: 665
-    width: 1347
-    height: 345
+    x: -1600
+    y: 661
+    width: 1131
+    height: 283
   m_SearchFilter:
     m_NameFilter: 
     m_ClassNames: []
@@ -2065,19 +3341,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/_Scripts/Speech
+    - Assets/_Prefabs
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/_Scripts/Speech
+  - Assets/_Prefabs
   m_LastFoldersGridSize: 16
-  m_LastProjectPath: D:\Workspaces\davidakash\MixedReality2\MixedReality2_Parking
+  m_LastProjectPath: D:\Games\Unity Projects\MixedReality2\MixedReality2_Parking
   m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 60}
-    m_SelectedIDs: 383d0000
-    m_LastClickedID: 15672
-    m_ExpandedIDs: 000000009c2800001229000056290000962a0000822b00004a2c000000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 57}
+    m_SelectedIDs: 542c0000
+    m_LastClickedID: 11348
+    m_ExpandedIDs: 000000009e2800001429000058290000982a0000842b00004e2c000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -2105,7 +3381,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000009c2800001229000056290000962a0000822b0000
+    m_ExpandedIDs: 000000009e2800001429000058290000982a0000842b00004e2c0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -2130,8 +3406,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: a2fbffff
-    m_LastClickedInstanceID: -1118
+    m_SelectedInstanceIDs: 282e0000
+    m_LastClickedInstanceID: 11816
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000ea240000a40bfeff82860000f28a00004e68fbff9a6d0000502500008c2500004c2500008025000056250000a02500005c2500009c250000f44400008e2500005e290000f8930000322a0000e8250000e02500006226000060260000a02700009a2700001626000064260000722600006e2600006c270000702600006e27000050260000ca2600003226000058260000c226000056260000cef3ffff9a260000662600005c260000a22600008c290000eaf2fcffac27000082280000e08bfeffac2c00007c2c0000ea280000183600008c390000c83500008e3900002a360000f03a00001a2b0000182f00000c2c0000fc2b00005a2c00004e2a0000fa2a0000662b00000000000034480000
     m_RenameOverlay:
@@ -2176,16 +3452,16 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Console
-    m_Image: {fileID: 111653112392082826, guid: 0000000000000000d000000000000000,
+    m_Image: {fileID: -4327648978806127646, guid: 0000000000000000d000000000000000,
       type: 0}
     m_Tooltip: 
   m_DepthBufferBits: 0
   m_Pos:
     serializedVersion: 2
-    x: 8
-    y: 665
-    width: 1347
-    height: 345
+    x: 0
+    y: 673
+    width: 1358
+    height: 355
 --- !u!114 &25
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -2202,16 +3478,16 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Inspector
-    m_Image: {fileID: -6905738622615590433, guid: 0000000000000000d000000000000000,
+    m_Image: {fileID: -2667387946076563598, guid: 0000000000000000d000000000000000,
       type: 0}
     m_Tooltip: 
   m_DepthBufferBits: 0
   m_Pos:
     serializedVersion: 2
-    x: 1362
-    y: 92
-    width: 558
-    height: 926
+    x: -465
+    y: 188
+    width: 465
+    height: 756
   m_ScrollPosition: {x: 0, y: 0}
   m_InspectorMode: 0
   m_PreviewResizer:

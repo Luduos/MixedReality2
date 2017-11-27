@@ -78,7 +78,7 @@ public class OSMapReader : MonoBehaviour {
 
     private void CreateOSMNode(XmlNode xmlNode)
     {
-        OSMNode osmNode = new OSMNode(xmlNode);
+        OSMNode osmNode = new OSMNode(xmlNode, MapInfo.Bounds.Center);
         MapInfo.Nodes[osmNode.ID] = osmNode;
     }
 

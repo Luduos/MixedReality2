@@ -13,26 +13,22 @@ public class Recognition : MonoBehaviour {
     private Dictionary<string, System.Action> keywords = new Dictionary<string, System.Action>();
 	// Use this for initialization
 	void Start () {
+
         keywords.Add("Go straight", () =>
         {
-            Debug.Log("Go straight");
             playerController.GoForward();
         });
         keywords.Add("Turn straight", () =>
         {
-            Debug.Log("Turn straight");
             playerController.TurnForward();
         });
 
-        string goLeft = "Go left";
-        keywords.Add(goLeft, () =>
+        keywords.Add("Go left", () =>
         {
-            Debug.Log(goLeft);
             playerController.GoLeft();
         });
         keywords.Add("Turn left", () =>
         {
-            Debug.Log("Turn forward");
             playerController.TurnLeft();
         });
         keywords.Add("Go right", () =>
@@ -55,19 +51,46 @@ public class Recognition : MonoBehaviour {
         {
             playerController.Continue();
         });
-        
 
+        keywords.Add("Search", () =>
+        {
+            playerController.SearchParkingSpaces();
+        });
+
+        keywords.Add("Hide", () =>
+        {
+            playerController.HideParkingSpaceDisplay();
+        });
+
+        keywords.Add("1", () =>
+        {
+            playerController.Select(1);
+        });
+        keywords.Add("2", () =>
+        {
+            playerController.Select(2);
+        });
+        keywords.Add("3", () =>
+        {
+            playerController.Select(3);
+        });
+        keywords.Add("4", () =>
+        {
+            playerController.Select(4);
+        });
+        keywords.Add("5", () =>
+        {
+            playerController.Select(5);
+        });
+        
 
         keywordRecognizer = new KeywordRecognizer(keywords.Keys.ToArray());
         keywordRecognizer.OnPhraseRecognized += KeywordRecognizerOnPhraseRecognized;
-        keywordRecognizer.Start();
-        
-		
+        keywordRecognizer.Start();    
 	}
 
    public void KeywordRecognizerOnPhraseRecognized(PhraseRecognizedEventArgs args) {
         System.Action keywordAction;
-
         if (keywords.TryGetValue(args.text, out keywordAction))
         {
             keywordAction.Invoke();
@@ -75,15 +98,4 @@ public class Recognition : MonoBehaviour {
         }
 
     }
-
-   public void CalledAkash() {
-        print("You just said Akash!");
-    }
-
-    public void CalledRoshan()
-    {
-        print("You just said Roshan!");
-    }
-
-
 }

@@ -29,9 +29,11 @@ public class PlayerController : MonoBehaviour {
     private Camera PlayerCamera;
 
     private bool IsTraveling = false;
-    private bool IsRotating = false;
     private static readonly float EPSILON = 0.1f;
 
+    private List<OSMWayFindingInfo> sortedParkingSpaces = new List<OSMWayFindingInfo>();
+    private OSMWayFindingInfo selectedParkingSpace;
+    
     /// <summary>
     /// Node the player is currently located at or traveling from
     /// </summary>
@@ -107,7 +109,6 @@ public class PlayerController : MonoBehaviour {
     /// <returns></returns>
     private IEnumerator TurnToNextNode()
     {
-        IsRotating = true;
 
         Transform rotationTransform = PlayerCarMesh.transform;
         Vector3 vecToNextNode = (NextNode.Position + PlayerOffset - this.transform.position).normalized;
@@ -131,7 +132,6 @@ public class PlayerController : MonoBehaviour {
             yield return null;
         }
         rotationTransform.rotation = targetRotation;
-        IsRotating = false;
         yield return null;
     }
 
@@ -158,11 +158,8 @@ public class PlayerController : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.RightArrow))
         {
             TurnRight();
-
         }
     }
-
-    
 
     // left / right
     // For left and right finding we are searching for the lowest dot product on the left / right axis
@@ -217,73 +214,140 @@ public class PlayerController : MonoBehaviour {
 
     /*******************     interface functions for speech input        ******************************/
 
-    public void SearchParkingLots()
+    public void SearchParkingSpaces()
     {
+        Display.HideCompass();
+        sortedParkingSpaces = null;
+        Navigator.SortParkingSpaces(this.transform.position, MapReader.MapInfo, out sortedParkingSpaces);
 
+        Display.ShowSelectableParkingSpaces(sortedParkingSpaces);
     }
 
-    public void Select(int parkingSpaceNumber)
+    public void Select(int selectedNumber)
     {
-        //TODO
+        if(null != sortedParkingSpaces)
+        {
+            if(selectedNumber <= Display.GetValidParkingSpaceOptionCount() && selectedNumber <= sortedParkingSpaces.Count)
+            {
+                selectedParkingSpace = sortedParkingSpaces[selectedNumber];
+                Display.ShowCompassTo(selectedParkingSpace.WayCenter);
+                Display.HideSelectableParkingSpaces();
+            }
+            else
+            {
+                Display.ShowInvalidOptionSelectionNotify();
+            }
+        }
+    }
+
+    public void HideParkingSpaceDisplay()
+    {
+        sortedParkingSpaces = null;
+        Display.HideSelectableParkingSpaces();
+        Display.HideCompass();
     }
 
     public void Continue()
     {
+        if (IsTraveling)
+        {
+            Display.ShowStillTravelingNotification();
+            return;
+        }
         if (CurrentNode == NextNode)
         {
             Display.OnNoNextTargetSelected();
         }
         else
         {
-            Debug.Log("Starting Travel");
             StartCoroutine(TravelToNextCrossRoads());
         }
     }
 
     public void TurnLeft()
     {
+        if (IsTraveling)
+        {
+            Display.ShowStillTravelingNotification();
+            return;
+        }
         FindNewNextNodeHorizontal(PlayerCarMesh.transform.right);
         StartCoroutine(TurnToNextNode());
     }
 
     public void GoLeft()
     {
+        if (IsTraveling)
+        {
+            Display.ShowStillTravelingNotification();
+            return;
+        }
         TurnLeft();
         Continue();
     }
 
     public void TurnRight()
     {
+        if (IsTraveling)
+        {
+            Display.ShowStillTravelingNotification();
+            return;
+        }
         FindNewNextNodeHorizontal(-PlayerCarMesh.transform.right);
         StartCoroutine(TurnToNextNode());
     }
 
     public void GoRight()
     {
+        if (IsTraveling)
+        {
+            Display.ShowStillTravelingNotification();
+            return;
+        }
         TurnRight();
         Continue();
     }
 
     public void TurnForward()
     {
+        if (IsTraveling)
+        {
+            Display.ShowStillTravelingNotification();
+            return;
+        }
         FindNewNextNodeVertical(PlayerCarMesh.transform.forward);
         StartCoroutine(TurnToNextNode());
     }
 
     public void GoForward()
     {
+        if (IsTraveling)
+        {
+            Display.ShowStillTravelingNotification();
+            return;
+        }
         TurnForward();
         Continue();
     }
 
     public void TurnBackward()
     {
+        if (IsTraveling)
+        {
+            Display.ShowStillTravelingNotification();
+            return;
+        }
         FindNewNextNodeVertical(-PlayerCarMesh.transform.forward);
         StartCoroutine(TurnToNextNode());
     }
 
     public void GoBackward()
     {
+        if (IsTraveling)
+        {
+            Display.ShowStillTravelingNotification();
+            return;
+        }
         TurnBackward();
         Continue();
     }
